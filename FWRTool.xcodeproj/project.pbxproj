@@ -31,6 +31,7 @@
 		450752B924D40A15008C3166 /* MainWindowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 450752B624D40A15008C3166 /* MainWindowCell.m */; };
 		453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460DC24D4100E00E27E2A /* ColorPickerVC.m */; };
 		453460E124D4158C00E27E2A /* UIView+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460E024D4158C00E27E2A /* UIView+Color.m */; };
+		453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460E324D7A14300E27E2A /* FWRMagnifierView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		453460DC24D4100E00E27E2A /* ColorPickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerVC.m; sourceTree = "<group>"; };
 		453460DF24D4158C00E27E2A /* UIView+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Color.h"; sourceTree = "<group>"; };
 		453460E024D4158C00E27E2A /* UIView+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Color.m"; sourceTree = "<group>"; };
+		453460E224D7A14300E27E2A /* FWRMagnifierView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRMagnifierView.h; sourceTree = "<group>"; };
+		453460E324D7A14300E27E2A /* FWRMagnifierView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRMagnifierView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,8 @@
 				4507527124D2C1EE008C3166 /* MBProgressHUD.m */,
 				4507527724D2C1EE008C3166 /* CommonClass.h */,
 				4507527224D2C1EE008C3166 /* CommonClass.m */,
+				453460E224D7A14300E27E2A /* FWRMagnifierView.h */,
+				453460E324D7A14300E27E2A /* FWRMagnifierView.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 				453460E124D4158C00E27E2A /* UIView+Color.m in Sources */,
 				450752B824D40A15008C3166 /* MainWindowVC.m in Sources */,
 				4507528824D2C211008C3166 /* UIBarButtonItem+Badge.m in Sources */,
+				453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */,
 				4507523E24D2BDCC008C3166 /* ViewController.m in Sources */,
 				450752B924D40A15008C3166 /* MainWindowCell.m in Sources */,
 				4507528924D2C211008C3166 /* UIView+FFrame.m in Sources */,

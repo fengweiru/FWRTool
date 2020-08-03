@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///*去除字符串前后空格和回车*/
 //+ (NSString *)getStringWithoutwhitespaceAndNewline:(NSString *)string;
 
+/*将UIColor转换成16进制字符串*/
++ (NSString *)toStrByUIColor:(UIColor *)color;
+
 @end
 
 NS_ASSUME_NONNULL_END

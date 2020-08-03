@@ -17,7 +17,7 @@
 //#import "UnderlineTextField.h"
 #import "MBProgressHUD.h"
 #import "UIView+Toast.h"
-//#import "CommonClass.h"
+#import "CommonClass.h"
 //#import "NavigationBaseController.h"
 
 //
