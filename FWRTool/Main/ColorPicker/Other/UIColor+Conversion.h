@@ -1,8 +1,8 @@
 //
-//  MainWindowCell.h
+//  UIColor+Conversion.h
 //  FWRTool
 //
-//  Created by 冯伟如 on 2020/7/31.
+//  Created by 冯伟如 on 2020/8/12.
 //  Copyright © 2020 Fengweiru. All rights reserved.
 //
 
@@ -10,9 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainWindowCell : UICollectionViewCell
+@interface UIColor (Conversion)
 
-- (void)configWithTitle:(NSString *)title;
+- (NSArray *)getRGBArray;
+- (NSArray *)getHSBArray;
 
 @end
 

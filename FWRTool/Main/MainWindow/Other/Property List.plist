@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>取色器</string>
+		<key>class</key>
+		<string>ColorPickerVC</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>心率检测</string>
+		<key>class</key>
+		<string>HeartRateVC</string>
+	</dict>
+</array>
+</plist>

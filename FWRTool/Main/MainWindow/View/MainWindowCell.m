@@ -30,9 +30,13 @@
     if (self = [super initWithFrame:frame]) {
         [self.contentView addSubview:self.title];
         self.title.frame = self.contentView.bounds;
-        self.title.text = @"哈哈哈啊哈";
     }
     return self;
+}
+
+- (void)configWithTitle:(NSString *)title
+{
+    self.title.text = title;
 }
 
 - (void)layoutSubviews

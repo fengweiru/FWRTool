@@ -1,8 +1,8 @@
 //
-//  MainWindowCell.h
+//  HeartLine.h
 //  FWRTool
 //
-//  Created by 冯伟如 on 2020/7/31.
+//  Created by 冯伟如 on 2020/8/14.
 //  Copyright © 2020 Fengweiru. All rights reserved.
 //
 
@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainWindowCell : UICollectionViewCell
+@interface HeartLine : UIView
 
-- (void)configWithTitle:(NSString *)title;
+- (void)drawRateWithPoint:(NSNumber *)point;
 
 @end
 

@@ -8,7 +8,31 @@
 
 #import "FWRMagnifierView.h"
 
+@interface FWRMagnifierView ()
+
+@property (nonatomic, strong) UIView *tagView;
+
+@end
+
 @implementation FWRMagnifierView
+
+- (UIView *)tagView
+{
+    if (!_tagView) {
+        _tagView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+        _tagView.backgroundColor = [UIColor clearColor];
+        
+        UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(8.5, 0, 3, 20)];
+        line1.layer.cornerRadius = line1.f_width/2;
+        line1.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+        [_tagView addSubview:line1];
+        UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(0, 8.5, 20, 3)];
+        line2.layer.cornerRadius = line2.f_height/2;
+        line2.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+        [_tagView addSubview:line2];
+    }
+    return _tagView;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -21,6 +45,8 @@
         self.layer.delegate = self;
         //保证和屏幕读取像素的比例一致
         self.layer.contentsScale = [[UIScreen mainScreen] scale];
+        
+        [self addSubview:self.tagView];
     }
     return self;
 }
@@ -54,6 +80,8 @@
 {
     [super setFrame:frame];
     self.layer.cornerRadius = frame.size.width/2;
+    
+    self.tagView.center = CGPointMake(frame.size.width/2, frame.size.height/2);
 }
 
 - (void)dealloc

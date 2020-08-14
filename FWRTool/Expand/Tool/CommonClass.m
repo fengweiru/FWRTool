@@ -72,7 +72,7 @@
     CGFloat r, g, b, a;
     [color getRed:&r green:&g blue:&b alpha:&a];
     int rgb = (int) (r * 255.0f)<<16 | (int) (g * 255.0f)<<8 | (int) (b * 255.0f)<<0;
-    return [NSString stringWithFormat:@"0x%06x", rgb];
+    return [NSString stringWithFormat:@"#%06x", rgb];
 
 }
 

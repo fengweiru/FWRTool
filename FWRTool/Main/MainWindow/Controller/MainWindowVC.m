@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
+@property (nonatomic, strong) NSArray *toolArr;
+
 @end
 
 @implementation MainWindowVC
@@ -56,9 +58,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
     self.view.backgroundColor = Color_Background;
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Property List" ofType:@"plist"];
+    self.toolArr = [NSArray arrayWithContentsOfFile:path];
     
     [self.view addSubview:self.collectionView];
     
@@ -66,19 +69,23 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 30;
+    return self.toolArr.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MainWindowCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainWindowCell" forIndexPath:indexPath];
+    NSDictionary *tool = self.toolArr[indexPath.row];
+    [cell configWithTitle:tool[@"name"]];
     
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    ColorPickerVC *vc = [[ColorPickerVC alloc] init];
+    NSDictionary *tool = self.toolArr[indexPath.row];
+    NSString *className = tool[@"class"];
+    UIViewController *vc = [[NSClassFromString(className) alloc] init];
     [self.navigationController pushViewController:vc animated:true];
 }
 

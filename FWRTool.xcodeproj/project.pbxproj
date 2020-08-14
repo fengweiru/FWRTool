@@ -32,6 +32,13 @@
 		453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460DC24D4100E00E27E2A /* ColorPickerVC.m */; };
 		453460E124D4158C00E27E2A /* UIView+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460E024D4158C00E27E2A /* UIView+Color.m */; };
 		453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460E324D7A14300E27E2A /* FWRMagnifierView.m */; };
+		4534614024E3812D00E27E2A /* ColorPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534613F24E3812D00E27E2A /* ColorPaletteView.m */; };
+		4534614324E383A200E27E2A /* ColorSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534614224E383A200E27E2A /* ColorSliderView.m */; };
+		4534614624E3B35E00E27E2A /* UIColor+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534614524E3B35E00E27E2A /* UIColor+Conversion.m */; };
+		4534615524E4CE3500E27E2A /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4534615424E4CE3500E27E2A /* Property List.plist */; };
+		4534615824E4CE9E00E27E2A /* HeartRateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534615724E4CE9E00E27E2A /* HeartRateVC.m */; };
+		4534615E24E659ED00E27E2A /* HeartRateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534615D24E659ED00E27E2A /* HeartRateManager.m */; };
+		4534616124E6740900E27E2A /* HeartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534616024E6740900E27E2A /* HeartLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +111,19 @@
 		453460E024D4158C00E27E2A /* UIView+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Color.m"; sourceTree = "<group>"; };
 		453460E224D7A14300E27E2A /* FWRMagnifierView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRMagnifierView.h; sourceTree = "<group>"; };
 		453460E324D7A14300E27E2A /* FWRMagnifierView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRMagnifierView.m; sourceTree = "<group>"; };
+		4534613E24E3812C00E27E2A /* ColorPaletteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorPaletteView.h; sourceTree = "<group>"; };
+		4534613F24E3812D00E27E2A /* ColorPaletteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorPaletteView.m; sourceTree = "<group>"; };
+		4534614124E383A200E27E2A /* ColorSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSliderView.h; sourceTree = "<group>"; };
+		4534614224E383A200E27E2A /* ColorSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorSliderView.m; sourceTree = "<group>"; };
+		4534614424E3B35E00E27E2A /* UIColor+Conversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Conversion.h"; sourceTree = "<group>"; };
+		4534614524E3B35E00E27E2A /* UIColor+Conversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Conversion.m"; sourceTree = "<group>"; };
+		4534615424E4CE3500E27E2A /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		4534615624E4CE9E00E27E2A /* HeartRateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartRateVC.h; sourceTree = "<group>"; };
+		4534615724E4CE9E00E27E2A /* HeartRateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartRateVC.m; sourceTree = "<group>"; };
+		4534615C24E659ED00E27E2A /* HeartRateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartRateManager.h; sourceTree = "<group>"; };
+		4534615D24E659ED00E27E2A /* HeartRateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartRateManager.m; sourceTree = "<group>"; };
+		4534615F24E6740900E27E2A /* HeartLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartLine.h; sourceTree = "<group>"; };
+		4534616024E6740900E27E2A /* HeartLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +269,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4534614724E4C5E100E27E2A /* HeartRate */,
 				450752BC24D40F7F008C3166 /* ColorPicker */,
 				4507529224D3AF94008C3166 /* Base */,
 				450752B124D40A15008C3166 /* MainWindow */,
@@ -316,6 +337,8 @@
 		450752B124D40A15008C3166 /* MainWindow */ = {
 			isa = PBXGroup;
 			children = (
+				4534614D24E4C9C700E27E2A /* Other */,
+				4534614C24E4C9AF00E27E2A /* Model */,
 				450752B224D40A15008C3166 /* Controller */,
 				450752B524D40A15008C3166 /* View */,
 			);
@@ -334,8 +357,8 @@
 		450752B524D40A15008C3166 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				450752B624D40A15008C3166 /* MainWindowCell.m */,
 				450752B724D40A15008C3166 /* MainWindowCell.h */,
+				450752B624D40A15008C3166 /* MainWindowCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +399,10 @@
 		450752BE24D40F9B008C3166 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4534613E24E3812C00E27E2A /* ColorPaletteView.h */,
+				4534613F24E3812D00E27E2A /* ColorPaletteView.m */,
+				4534614124E383A200E27E2A /* ColorSliderView.h */,
+				4534614224E383A200E27E2A /* ColorSliderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,6 +412,68 @@
 			children = (
 				453460DF24D4158C00E27E2A /* UIView+Color.h */,
 				453460E024D4158C00E27E2A /* UIView+Color.m */,
+				4534614424E3B35E00E27E2A /* UIColor+Conversion.h */,
+				4534614524E3B35E00E27E2A /* UIColor+Conversion.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4534614724E4C5E100E27E2A /* HeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				4534614B24E4C63200E27E2A /* Controller */,
+				4534614A24E4C62D00E27E2A /* Model */,
+				4534614924E4C62400E27E2A /* View */,
+				4534614824E4C61D00E27E2A /* Other */,
+			);
+			path = HeartRate;
+			sourceTree = "<group>";
+		};
+		4534614824E4C61D00E27E2A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4534615C24E659ED00E27E2A /* HeartRateManager.h */,
+				4534615D24E659ED00E27E2A /* HeartRateManager.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4534614924E4C62400E27E2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4534615F24E6740900E27E2A /* HeartLine.h */,
+				4534616024E6740900E27E2A /* HeartLine.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4534614A24E4C62D00E27E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4534614B24E4C63200E27E2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4534615624E4CE9E00E27E2A /* HeartRateVC.h */,
+				4534615724E4CE9E00E27E2A /* HeartRateVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4534614C24E4C9AF00E27E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4534614D24E4C9C700E27E2A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4534615424E4CE3500E27E2A /* Property List.plist */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -494,6 +583,7 @@
 			files = (
 				4507524924D2BDCD008C3166 /* LaunchScreen.storyboard in Resources */,
 				4507524624D2BDCD008C3166 /* Assets.xcassets in Resources */,
+				4534615524E4CE3500E27E2A /* Property List.plist in Resources */,
 				4507524124D2BDCC008C3166 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,8 +610,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4507524C24D2BDCD008C3166 /* main.m in Sources */,
+				4534615E24E659ED00E27E2A /* HeartRateManager.m in Sources */,
 				450752A424D3AF95008C3166 /* BaseViewController.m in Sources */,
 				450752A124D3AF95008C3166 /* TabbarBaseVC.m in Sources */,
+				4534616124E6740900E27E2A /* HeartLine.m in Sources */,
+				4534614024E3812D00E27E2A /* ColorPaletteView.m in Sources */,
 				4507527924D2C1EE008C3166 /* MBProgressHUD.m in Sources */,
 				450752A524D3AF95008C3166 /* NavigationBaseController.m in Sources */,
 				4507527A24D2C1EE008C3166 /* CommonClass.m in Sources */,
@@ -535,10 +628,13 @@
 				453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */,
 				4507528A24D2C211008C3166 /* UIButton+Badge.m in Sources */,
 				4507528B24D2C211008C3166 /* UIView+Toast.m in Sources */,
+				4534615824E4CE9E00E27E2A /* HeartRateVC.m in Sources */,
 				4507524424D2BDCC008C3166 /* FWRTool.xcdatamodeld in Sources */,
 				450752A324D3AF95008C3166 /* WKWebViewVC.m in Sources */,
 				4507523824D2BDCC008C3166 /* AppDelegate.m in Sources */,
 				4507527B24D2C1EE008C3166 /* CommonPickerView.m in Sources */,
+				4534614624E3B35E00E27E2A /* UIColor+Conversion.m in Sources */,
+				4534614324E383A200E27E2A /* ColorSliderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,12 +804,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S8CN552LVB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FWRTool/Tool-Prefix.pch";
 				INFOPLIST_FILE = FWRTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Fengweiru.FWRTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -725,12 +824,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S8CN552LVB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FWRTool/Tool-Prefix.pch";
 				INFOPLIST_FILE = FWRTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Fengweiru.FWRTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
