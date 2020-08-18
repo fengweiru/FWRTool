@@ -39,6 +39,10 @@
 		4534615824E4CE9E00E27E2A /* HeartRateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534615724E4CE9E00E27E2A /* HeartRateVC.m */; };
 		4534615E24E659ED00E27E2A /* HeartRateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534615D24E659ED00E27E2A /* HeartRateManager.m */; };
 		4534616124E6740900E27E2A /* HeartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534616024E6740900E27E2A /* HeartLine.m */; };
+		4534616424EA612200E27E2A /* RelativeCalculateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534616324EA612200E27E2A /* RelativeCalculateVC.m */; };
+		4534616C24EB5D2B00E27E2A /* CalculatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534616B24EB5D2B00E27E2A /* CalculatorVC.m */; };
+		4534616F24EB5DE000E27E2A /* CalculatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534616E24EB5DE000E27E2A /* CalculatorCell.m */; };
+		4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534621424EBC9B600E27E2A /* UnderlineTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +128,14 @@
 		4534615D24E659ED00E27E2A /* HeartRateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartRateManager.m; sourceTree = "<group>"; };
 		4534615F24E6740900E27E2A /* HeartLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartLine.h; sourceTree = "<group>"; };
 		4534616024E6740900E27E2A /* HeartLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartLine.m; sourceTree = "<group>"; };
+		4534616224EA612200E27E2A /* RelativeCalculateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelativeCalculateVC.h; sourceTree = "<group>"; };
+		4534616324EA612200E27E2A /* RelativeCalculateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelativeCalculateVC.m; sourceTree = "<group>"; };
+		4534616A24EB5D2B00E27E2A /* CalculatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorVC.h; sourceTree = "<group>"; };
+		4534616B24EB5D2B00E27E2A /* CalculatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorVC.m; sourceTree = "<group>"; };
+		4534616D24EB5DE000E27E2A /* CalculatorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorCell.h; sourceTree = "<group>"; };
+		4534616E24EB5DE000E27E2A /* CalculatorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorCell.m; sourceTree = "<group>"; };
+		4534621424EBC9B600E27E2A /* UnderlineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderlineTextField.m; sourceTree = "<group>"; };
+		4534621524EBC9B600E27E2A /* UnderlineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderlineTextField.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +243,8 @@
 				4507527224D2C1EE008C3166 /* CommonClass.m */,
 				453460E224D7A14300E27E2A /* FWRMagnifierView.h */,
 				453460E324D7A14300E27E2A /* FWRMagnifierView.m */,
+				4534621524EBC9B600E27E2A /* UnderlineTextField.h */,
+				4534621424EBC9B600E27E2A /* UnderlineTextField.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -269,6 +283,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4534616524EB5CC000E27E2A /* Calculator */,
 				4534614724E4C5E100E27E2A /* HeartRate */,
 				450752BC24D40F7F008C3166 /* ColorPicker */,
 				4507529224D3AF94008C3166 /* Base */,
@@ -366,6 +381,8 @@
 		450752BA24D40A63008C3166 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4534616224EA612200E27E2A /* RelativeCalculateVC.h */,
+				4534616324EA612200E27E2A /* RelativeCalculateVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -476,6 +493,49 @@
 				4534615424E4CE3500E27E2A /* Property List.plist */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		4534616524EB5CC000E27E2A /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				4534616924EB5D1100E27E2A /* Controller */,
+				4534616824EB5D0700E27E2A /* View */,
+				4534616724EB5CF900E27E2A /* Model */,
+				4534616624EB5CF100E27E2A /* Other */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		4534616624EB5CF100E27E2A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4534616724EB5CF900E27E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4534616824EB5D0700E27E2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4534616D24EB5DE000E27E2A /* CalculatorCell.h */,
+				4534616E24EB5DE000E27E2A /* CalculatorCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4534616924EB5D1100E27E2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4534616A24EB5D2B00E27E2A /* CalculatorVC.h */,
+				4534616B24EB5D2B00E27E2A /* CalculatorVC.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,6 +673,7 @@
 				4534615E24E659ED00E27E2A /* HeartRateManager.m in Sources */,
 				450752A424D3AF95008C3166 /* BaseViewController.m in Sources */,
 				450752A124D3AF95008C3166 /* TabbarBaseVC.m in Sources */,
+				4534616C24EB5D2B00E27E2A /* CalculatorVC.m in Sources */,
 				4534616124E6740900E27E2A /* HeartLine.m in Sources */,
 				4534614024E3812D00E27E2A /* ColorPaletteView.m in Sources */,
 				4507527924D2C1EE008C3166 /* MBProgressHUD.m in Sources */,
@@ -624,12 +685,15 @@
 				453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */,
 				4507523E24D2BDCC008C3166 /* ViewController.m in Sources */,
 				450752B924D40A15008C3166 /* MainWindowCell.m in Sources */,
+				4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */,
 				4507528924D2C211008C3166 /* UIView+FFrame.m in Sources */,
 				453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */,
 				4507528A24D2C211008C3166 /* UIButton+Badge.m in Sources */,
 				4507528B24D2C211008C3166 /* UIView+Toast.m in Sources */,
 				4534615824E4CE9E00E27E2A /* HeartRateVC.m in Sources */,
+				4534616F24EB5DE000E27E2A /* CalculatorCell.m in Sources */,
 				4507524424D2BDCC008C3166 /* FWRTool.xcdatamodeld in Sources */,
+				4534616424EA612200E27E2A /* RelativeCalculateVC.m in Sources */,
 				450752A324D3AF95008C3166 /* WKWebViewVC.m in Sources */,
 				4507523824D2BDCC008C3166 /* AppDelegate.m in Sources */,
 				4507527B24D2C1EE008C3166 /* CommonPickerView.m in Sources */,

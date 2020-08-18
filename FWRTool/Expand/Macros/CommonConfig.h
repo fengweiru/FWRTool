@@ -31,7 +31,7 @@
 
 #define Height_For_AppHeader  ([[UIApplication sharedApplication] statusBarFrame].size.height+44)
 #define Height_For_StatusBar  [[UIApplication sharedApplication] statusBarFrame].size.height
-#define Height_For_IphoneBottom   ((kScreenH==812)?34:0)
+#define Height_For_IphoneBottom   ((kScreenH==812 || kScreenH == 896)?34:0)
 #define Height_For_Tabbar     49
 
 /****************

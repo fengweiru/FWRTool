@@ -76,4 +76,17 @@
 
 }
 
+#pragma mark -- 根据颜色块生成图像
++ (UIImage *)createImageWithColor:(UIColor *)color withFrame:(CGRect)frame
+{
+    UIGraphicsBeginImageContext(frame.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, frame);
+    
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
+}
+
 @end

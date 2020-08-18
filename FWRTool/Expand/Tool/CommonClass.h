@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 /*将UIColor转换成16进制字符串*/
 + (NSString *)toStrByUIColor:(UIColor *)color;
 
+/*根据颜色生成图像*/
++ (UIImage *)createImageWithColor:(UIColor *)color withFrame:(CGRect)frame;
+
 @end
 
 NS_ASSUME_NONNULL_END

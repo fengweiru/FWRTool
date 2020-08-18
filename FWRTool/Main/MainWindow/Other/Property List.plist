@@ -14,5 +14,11 @@
 		<key>class</key>
 		<string>HeartRateVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>计算器</string>
+		<key>class</key>
+		<string>CalculatorVC</string>
+	</dict>
 </array>
 </plist>
