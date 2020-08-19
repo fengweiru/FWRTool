@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) id<CalculatorCellDelegate> delegate;
 
 - (void)setNameText:(NSString *)text couldSelected:(BOOL)couldSelect;
+- (void)setButtonSelected:(BOOL)selected;
 
 @end
 

@@ -56,6 +56,11 @@
     self.couldSelected = couldSelect;
 }
 
+- (void)setButtonSelected:(BOOL)selected
+{
+    self.nameButton.selected = selected;
+}
+
 - (void)clickText:(UIButton *)sender
 {
     if (self.couldSelected) {
@@ -64,6 +69,11 @@
     if (self.delegate && [self.delegate respondsToSelector:@selector(clickText:)]) {
         [self.delegate clickText:self.nameButton.titleLabel.text];
     }
+}
+
+- (void)layoutSubviews
+{
+    self.nameButton.frame = CGRectMake(10, 10, self.f_width-20, self.f_height-20);
 }
 
 @end
