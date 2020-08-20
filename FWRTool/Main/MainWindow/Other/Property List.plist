@@ -20,5 +20,11 @@
 		<key>class</key>
 		<string>CalculatorVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>网页截图</string>
+		<key>class</key>
+		<string>WebScreenShotVC</string>
+	</dict>
 </array>
 </plist>

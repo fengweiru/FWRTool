@@ -43,6 +43,11 @@
 		4534616C24EB5D2B00E27E2A /* CalculatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534616B24EB5D2B00E27E2A /* CalculatorVC.m */; };
 		4534616F24EB5DE000E27E2A /* CalculatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534616E24EB5DE000E27E2A /* CalculatorCell.m */; };
 		4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534621424EBC9B600E27E2A /* UnderlineTextField.m */; };
+		4534621E24EE4D1000E27E2A /* WebScreenShotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534621D24EE4D1000E27E2A /* WebScreenShotVC.m */; };
+		4534622124EE5ADE00E27E2A /* UIButton+ExpandClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622024EE5ADE00E27E2A /* UIButton+ExpandClick.m */; };
+		4534622424EE682200E27E2A /* WebViewBrowseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622324EE682200E27E2A /* WebViewBrowseVC.m */; };
+		4534622724EE6C8300E27E2A /* UIScrollView+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622624EE6C8300E27E2A /* UIScrollView+ScreenShot.m */; };
+		4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622924EE715E00E27E2A /* ScreenImageBrowseVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +141,16 @@
 		4534616E24EB5DE000E27E2A /* CalculatorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorCell.m; sourceTree = "<group>"; };
 		4534621424EBC9B600E27E2A /* UnderlineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderlineTextField.m; sourceTree = "<group>"; };
 		4534621524EBC9B600E27E2A /* UnderlineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderlineTextField.h; sourceTree = "<group>"; };
+		4534621C24EE4D1000E27E2A /* WebScreenShotVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebScreenShotVC.h; sourceTree = "<group>"; };
+		4534621D24EE4D1000E27E2A /* WebScreenShotVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebScreenShotVC.m; sourceTree = "<group>"; };
+		4534621F24EE5ADE00E27E2A /* UIButton+ExpandClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ExpandClick.h"; sourceTree = "<group>"; };
+		4534622024EE5ADE00E27E2A /* UIButton+ExpandClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ExpandClick.m"; sourceTree = "<group>"; };
+		4534622224EE682200E27E2A /* WebViewBrowseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewBrowseVC.h; sourceTree = "<group>"; };
+		4534622324EE682200E27E2A /* WebViewBrowseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewBrowseVC.m; sourceTree = "<group>"; };
+		4534622524EE6C8300E27E2A /* UIScrollView+ScreenShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScreenShot.h"; sourceTree = "<group>"; };
+		4534622624EE6C8300E27E2A /* UIScrollView+ScreenShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScreenShot.m"; sourceTree = "<group>"; };
+		4534622824EE715E00E27E2A /* ScreenImageBrowseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenImageBrowseVC.h; sourceTree = "<group>"; };
+		4534622924EE715E00E27E2A /* ScreenImageBrowseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenImageBrowseVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +275,10 @@
 				4507528524D2C211008C3166 /* UIBarButtonItem+Badge.h */,
 				4507528124D2C211008C3166 /* UIView+Toast.h */,
 				4507528624D2C211008C3166 /* UIView+Toast.m */,
+				4534621F24EE5ADE00E27E2A /* UIButton+ExpandClick.h */,
+				4534622024EE5ADE00E27E2A /* UIButton+ExpandClick.m */,
+				4534622524EE6C8300E27E2A /* UIScrollView+ScreenShot.h */,
+				4534622624EE6C8300E27E2A /* UIScrollView+ScreenShot.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -283,6 +302,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4534621724EE4C2B00E27E2A /* WebScreenShot */,
 				4534616524EB5CC000E27E2A /* Calculator */,
 				4534614724E4C5E100E27E2A /* HeartRate */,
 				450752BC24D40F7F008C3166 /* ColorPicker */,
@@ -538,6 +558,51 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		4534621724EE4C2B00E27E2A /* WebScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				4534621B24EE4CBC00E27E2A /* Controller */,
+				4534621A24EE4CB700E27E2A /* View */,
+				4534621924EE4CB200E27E2A /* Model */,
+				4534621824EE4CAB00E27E2A /* Other */,
+			);
+			path = WebScreenShot;
+			sourceTree = "<group>";
+		};
+		4534621824EE4CAB00E27E2A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4534621924EE4CB200E27E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4534621A24EE4CB700E27E2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4534621B24EE4CBC00E27E2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4534621C24EE4D1000E27E2A /* WebScreenShotVC.h */,
+				4534621D24EE4D1000E27E2A /* WebScreenShotVC.m */,
+				4534622224EE682200E27E2A /* WebViewBrowseVC.h */,
+				4534622324EE682200E27E2A /* WebViewBrowseVC.m */,
+				4534622824EE715E00E27E2A /* ScreenImageBrowseVC.h */,
+				4534622924EE715E00E27E2A /* ScreenImageBrowseVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -686,19 +751,24 @@
 				4507523E24D2BDCC008C3166 /* ViewController.m in Sources */,
 				450752B924D40A15008C3166 /* MainWindowCell.m in Sources */,
 				4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */,
+				4534622424EE682200E27E2A /* WebViewBrowseVC.m in Sources */,
 				4507528924D2C211008C3166 /* UIView+FFrame.m in Sources */,
 				453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */,
 				4507528A24D2C211008C3166 /* UIButton+Badge.m in Sources */,
 				4507528B24D2C211008C3166 /* UIView+Toast.m in Sources */,
 				4534615824E4CE9E00E27E2A /* HeartRateVC.m in Sources */,
 				4534616F24EB5DE000E27E2A /* CalculatorCell.m in Sources */,
+				4534621E24EE4D1000E27E2A /* WebScreenShotVC.m in Sources */,
 				4507524424D2BDCC008C3166 /* FWRTool.xcdatamodeld in Sources */,
 				4534616424EA612200E27E2A /* RelativeCalculateVC.m in Sources */,
 				450752A324D3AF95008C3166 /* WKWebViewVC.m in Sources */,
 				4507523824D2BDCC008C3166 /* AppDelegate.m in Sources */,
+				4534622124EE5ADE00E27E2A /* UIButton+ExpandClick.m in Sources */,
 				4507527B24D2C1EE008C3166 /* CommonPickerView.m in Sources */,
+				4534622724EE6C8300E27E2A /* UIScrollView+ScreenShot.m in Sources */,
 				4534614624E3B35E00E27E2A /* UIColor+Conversion.m in Sources */,
 				4534614324E383A200E27E2A /* ColorSliderView.m in Sources */,
+				4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
