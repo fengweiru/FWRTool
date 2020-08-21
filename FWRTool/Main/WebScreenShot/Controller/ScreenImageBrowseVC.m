@@ -47,10 +47,19 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
+    [arr removeObjectAtIndex:arr.count-2];
+    [self.navigationController setViewControllers:arr];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.title = @"截图";
     [self setNavRightItemWithTitle:@"保存截图"];
     
     [self.view addSubview:self.scrollView];

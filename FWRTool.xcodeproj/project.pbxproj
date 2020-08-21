@@ -48,6 +48,7 @@
 		4534622424EE682200E27E2A /* WebViewBrowseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622324EE682200E27E2A /* WebViewBrowseVC.m */; };
 		4534622724EE6C8300E27E2A /* UIScrollView+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622624EE6C8300E27E2A /* UIScrollView+ScreenShot.m */; };
 		4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622924EE715E00E27E2A /* ScreenImageBrowseVC.m */; };
+		4534622D24EF653A00E27E2A /* PPSnapshotHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622C24EF653A00E27E2A /* PPSnapshotHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,8 @@
 		4534622624EE6C8300E27E2A /* UIScrollView+ScreenShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScreenShot.m"; sourceTree = "<group>"; };
 		4534622824EE715E00E27E2A /* ScreenImageBrowseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenImageBrowseVC.h; sourceTree = "<group>"; };
 		4534622924EE715E00E27E2A /* ScreenImageBrowseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenImageBrowseVC.m; sourceTree = "<group>"; };
+		4534622B24EF653A00E27E2A /* PPSnapshotHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSnapshotHandler.h; sourceTree = "<group>"; };
+		4534622C24EF653A00E27E2A /* PPSnapshotHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshotHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -572,6 +575,8 @@
 		4534621824EE4CAB00E27E2A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				4534622B24EF653A00E27E2A /* PPSnapshotHandler.h */,
+				4534622C24EF653A00E27E2A /* PPSnapshotHandler.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -742,6 +747,7 @@
 				4534616124E6740900E27E2A /* HeartLine.m in Sources */,
 				4534614024E3812D00E27E2A /* ColorPaletteView.m in Sources */,
 				4507527924D2C1EE008C3166 /* MBProgressHUD.m in Sources */,
+				4534622D24EF653A00E27E2A /* PPSnapshotHandler.m in Sources */,
 				450752A524D3AF95008C3166 /* NavigationBaseController.m in Sources */,
 				4507527A24D2C1EE008C3166 /* CommonClass.m in Sources */,
 				453460E124D4158C00E27E2A /* UIView+Color.m in Sources */,

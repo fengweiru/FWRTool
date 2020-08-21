@@ -10,8 +10,9 @@
 #import <WebKit/WebKit.h>
 #import "UIScrollView+ScreenShot.h"
 #import "ScreenImageBrowseVC.h"
+#import "PPSnapshotHandler.h"
 
-@interface WebViewBrowseVC ()
+@interface WebViewBrowseVC ()<PPSnapshotHandlerDelegate>
 
 @property (nonatomic, strong) NSString *urlStr;
 @property (nonatomic, strong) WKWebView *webview;
@@ -39,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.title = self.urlStr;
     [self setNavRightItemWithTitle:@"截图"];
     
     [self.view addSubview:self.webview];
@@ -52,21 +53,17 @@
 {
 //    UIScrollView *scrollView = self.webview.scrollView;
 //    UIImage *image = [scrollView screenShot];
-    
-    // 开启图片上下文
-    UIGraphicsBeginImageContextWithOptions(self.webview.f_size, NO, 0.f);
-    // 获取当前上下文
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
-    // 截图:实际是把layer上面的东西绘制到上下文中
-    [self.webview.layer renderInContext:ctx];
-    //iOS7+ 推荐使用的方法，代替上述方法
-    // [shadowView drawViewHierarchyInRect:shadowView.frame afterScreenUpdates:YES];
-    // 获取截图
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    // 关闭图片上下文
-    UIGraphicsEndImageContext();
-    
-    ScreenImageBrowseVC *vc = [[ScreenImageBrowseVC alloc] initWithImage:image];
+    PPSnapshotHandler.defaultHandler.delegate = self;
+    [PPSnapshotHandler.defaultHandler snapshotForView:self.webview];
+}
+
+#pragma mark - PPSnapshotHandlerDelegate
+
+- (void)snapshotHandler:(PPSnapshotHandler *)snapshotHandler didFinish:(UIImage *)captureImage forView:(UIView *)view
+{
+    PPSnapshotHandler.defaultHandler.delegate = nil;
+
+    ScreenImageBrowseVC *vc = [[ScreenImageBrowseVC alloc] initWithImage:captureImage];
     [self.navigationController pushViewController:vc animated:true];
 }
 
