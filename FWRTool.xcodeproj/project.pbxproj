@@ -49,6 +49,7 @@
 		4534622724EE6C8300E27E2A /* UIScrollView+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622624EE6C8300E27E2A /* UIScrollView+ScreenShot.m */; };
 		4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622924EE715E00E27E2A /* ScreenImageBrowseVC.m */; };
 		4534622D24EF653A00E27E2A /* PPSnapshotHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622C24EF653A00E27E2A /* PPSnapshotHandler.m */; };
+		4534623224EF6B8B00E27E2A /* DecibelMeterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623124EF6B8B00E27E2A /* DecibelMeterVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,8 @@
 		4534622924EE715E00E27E2A /* ScreenImageBrowseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenImageBrowseVC.m; sourceTree = "<group>"; };
 		4534622B24EF653A00E27E2A /* PPSnapshotHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSnapshotHandler.h; sourceTree = "<group>"; };
 		4534622C24EF653A00E27E2A /* PPSnapshotHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshotHandler.m; sourceTree = "<group>"; };
+		4534623024EF6B8B00E27E2A /* DecibelMeterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecibelMeterVC.h; sourceTree = "<group>"; };
+		4534623124EF6B8B00E27E2A /* DecibelMeterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecibelMeterVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +308,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4534622E24EF6B6500E27E2A /* DecibelMeter */,
 				4534621724EE4C2B00E27E2A /* WebScreenShot */,
 				4534616524EB5CC000E27E2A /* Calculator */,
 				4534614724E4C5E100E27E2A /* HeartRate */,
@@ -608,6 +612,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		4534622E24EF6B6500E27E2A /* DecibelMeter */ = {
+			isa = PBXGroup;
+			children = (
+				4534622F24EF6B7900E27E2A /* Controller */,
+			);
+			path = DecibelMeter;
+			sourceTree = "<group>";
+		};
+		4534622F24EF6B7900E27E2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4534623024EF6B8B00E27E2A /* DecibelMeterVC.h */,
+				4534623124EF6B8B00E27E2A /* DecibelMeterVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -742,6 +763,7 @@
 				4507524C24D2BDCD008C3166 /* main.m in Sources */,
 				4534615E24E659ED00E27E2A /* HeartRateManager.m in Sources */,
 				450752A424D3AF95008C3166 /* BaseViewController.m in Sources */,
+				4534623224EF6B8B00E27E2A /* DecibelMeterVC.m in Sources */,
 				450752A124D3AF95008C3166 /* TabbarBaseVC.m in Sources */,
 				4534616C24EB5D2B00E27E2A /* CalculatorVC.m in Sources */,
 				4534616124E6740900E27E2A /* HeartLine.m in Sources */,

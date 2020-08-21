@@ -14,6 +14,7 @@
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 #define CommonOrangeColor FColor(238, 105, 85)
+#define CommonBlueColor FColor(0x33, 0xcc, 0xff)
 
 // 自定义颜色
 #define FColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]

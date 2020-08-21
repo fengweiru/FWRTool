@@ -26,5 +26,11 @@
 		<key>class</key>
 		<string>WebScreenShotVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>分贝仪</string>
+		<key>class</key>
+		<string>DecibelMeterVC</string>
+	</dict>
 </array>
 </plist>

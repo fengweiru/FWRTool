@@ -62,7 +62,7 @@
         _button = [UIButton buttonWithType:UIButtonTypeCustom];
         _button.frame = CGRectMake(30, self.textView.f_bottom+50, kScreenW-60, 50);
         _button.layer.cornerRadius = 5;
-        [_button setBackgroundColor:FColor(0x33, 0xcc, 0xff)];
+        [_button setBackgroundColor:CommonBlueColor];
         [_button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_button setTitle:@"打开网页" forState:UIControlStateNormal];
         
