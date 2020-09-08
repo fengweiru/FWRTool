@@ -101,7 +101,9 @@
 - (void)startHeartDelegateRatePoint:(NSDictionary *)point {
     NSNumber *n = [[point allValues] firstObject];
     //拿到的数据传给心电图View
-    [self.heartLine drawRateWithPoint:n];
+    if (_heartLine) {
+        [self.heartLine drawRateWithPoint:n];
+    }
     //NSLog(@"%@",point);
 }
 

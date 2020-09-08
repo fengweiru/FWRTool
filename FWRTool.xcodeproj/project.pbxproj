@@ -50,6 +50,10 @@
 		4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622924EE715E00E27E2A /* ScreenImageBrowseVC.m */; };
 		4534622D24EF653A00E27E2A /* PPSnapshotHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534622C24EF653A00E27E2A /* PPSnapshotHandler.m */; };
 		4534623224EF6B8B00E27E2A /* DecibelMeterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623124EF6B8B00E27E2A /* DecibelMeterVC.m */; };
+		4534623724F4E98600E27E2A /* NetworkMeasureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623624F4E98600E27E2A /* NetworkMeasureVC.m */; };
+		4534623B24F601E700E27E2A /* NetworkMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623A24F601E700E27E2A /* NetworkMeasure.m */; };
+		4534623F24F6073100E27E2A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623D24F6073100E27E2A /* Reachability.m */; };
+		4534624324F6079900E27E2A /* SpeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534624224F6079900E27E2A /* SpeedModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +161,15 @@
 		4534622C24EF653A00E27E2A /* PPSnapshotHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSnapshotHandler.m; sourceTree = "<group>"; };
 		4534623024EF6B8B00E27E2A /* DecibelMeterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecibelMeterVC.h; sourceTree = "<group>"; };
 		4534623124EF6B8B00E27E2A /* DecibelMeterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecibelMeterVC.m; sourceTree = "<group>"; };
+		4534623524F4E98600E27E2A /* NetworkMeasureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkMeasureVC.h; sourceTree = "<group>"; };
+		4534623624F4E98600E27E2A /* NetworkMeasureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkMeasureVC.m; sourceTree = "<group>"; };
+		4534623924F601E700E27E2A /* NetworkMeasure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkMeasure.h; sourceTree = "<group>"; };
+		4534623A24F601E700E27E2A /* NetworkMeasure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkMeasure.m; sourceTree = "<group>"; };
+		4534623D24F6073100E27E2A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4534623E24F6073100E27E2A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4534624124F6079900E27E2A /* SpeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedModel.h; sourceTree = "<group>"; };
+		4534624224F6079900E27E2A /* SpeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedModel.m; sourceTree = "<group>"; };
+		4534624424F62C1F00E27E2A /* FWRTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FWRTool.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +220,7 @@
 		4507523524D2BDCC008C3166 /* FWRTool */ = {
 			isa = PBXGroup;
 			children = (
+				4534624424F62C1F00E27E2A /* FWRTool.entitlements */,
 				4507526E24D2C1C9008C3166 /* Expand */,
 				4507529124D3AF58008C3166 /* Main */,
 				4507523624D2BDCC008C3166 /* AppDelegate.h */,
@@ -256,6 +270,7 @@
 		4507526F24D2C1EE008C3166 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4534623C24F6073100E27E2A /* Reachability */,
 				4507527624D2C1EE008C3166 /* CommonPickerView.h */,
 				4507527324D2C1EE008C3166 /* CommonPickerView.m */,
 				4507527424D2C1EE008C3166 /* MBProgressHUD.h */,
@@ -308,6 +323,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4534623324F4E92200E27E2A /* NetworkMeasure */,
 				4534622E24EF6B6500E27E2A /* DecibelMeter */,
 				4534621724EE4C2B00E27E2A /* WebScreenShot */,
 				4534616524EB5CC000E27E2A /* Calculator */,
@@ -629,6 +645,52 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		4534623324F4E92200E27E2A /* NetworkMeasure */ = {
+			isa = PBXGroup;
+			children = (
+				4534624024F6078400E27E2A /* Model */,
+				4534623824F4E9C000E27E2A /* Other */,
+				4534623424F4E96600E27E2A /* Controller */,
+			);
+			path = NetworkMeasure;
+			sourceTree = "<group>";
+		};
+		4534623424F4E96600E27E2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4534623524F4E98600E27E2A /* NetworkMeasureVC.h */,
+				4534623624F4E98600E27E2A /* NetworkMeasureVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4534623824F4E9C000E27E2A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4534623924F601E700E27E2A /* NetworkMeasure.h */,
+				4534623A24F601E700E27E2A /* NetworkMeasure.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4534623C24F6073100E27E2A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				4534623D24F6073100E27E2A /* Reachability.m */,
+				4534623E24F6073100E27E2A /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		4534624024F6078400E27E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4534624124F6079900E27E2A /* SpeedModel.h */,
+				4534624224F6079900E27E2A /* SpeedModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -771,6 +833,7 @@
 				4507527924D2C1EE008C3166 /* MBProgressHUD.m in Sources */,
 				4534622D24EF653A00E27E2A /* PPSnapshotHandler.m in Sources */,
 				450752A524D3AF95008C3166 /* NavigationBaseController.m in Sources */,
+				4534624324F6079900E27E2A /* SpeedModel.m in Sources */,
 				4507527A24D2C1EE008C3166 /* CommonClass.m in Sources */,
 				453460E124D4158C00E27E2A /* UIView+Color.m in Sources */,
 				450752B824D40A15008C3166 /* MainWindowVC.m in Sources */,
@@ -778,6 +841,7 @@
 				453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */,
 				4507523E24D2BDCC008C3166 /* ViewController.m in Sources */,
 				450752B924D40A15008C3166 /* MainWindowCell.m in Sources */,
+				4534623724F4E98600E27E2A /* NetworkMeasureVC.m in Sources */,
 				4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */,
 				4534622424EE682200E27E2A /* WebViewBrowseVC.m in Sources */,
 				4507528924D2C211008C3166 /* UIView+FFrame.m in Sources */,
@@ -793,7 +857,9 @@
 				4507523824D2BDCC008C3166 /* AppDelegate.m in Sources */,
 				4534622124EE5ADE00E27E2A /* UIButton+ExpandClick.m in Sources */,
 				4507527B24D2C1EE008C3166 /* CommonPickerView.m in Sources */,
+				4534623F24F6073100E27E2A /* Reachability.m in Sources */,
 				4534622724EE6C8300E27E2A /* UIScrollView+ScreenShot.m in Sources */,
+				4534623B24F601E700E27E2A /* NetworkMeasure.m in Sources */,
 				4534614624E3B35E00E27E2A /* UIColor+Conversion.m in Sources */,
 				4534614324E383A200E27E2A /* ColorSliderView.m in Sources */,
 				4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */,
@@ -965,6 +1031,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FWRTool/FWRTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8CN552LVB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FWRTool/Tool-Prefix.pch";
@@ -985,6 +1052,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FWRTool/FWRTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8CN552LVB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FWRTool/Tool-Prefix.pch";

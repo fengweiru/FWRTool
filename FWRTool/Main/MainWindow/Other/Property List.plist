@@ -32,5 +32,11 @@
 		<key>class</key>
 		<string>DecibelMeterVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>网络测速</string>
+		<key>class</key>
+		<string>NetworkMeasureVC</string>
+	</dict>
 </array>
 </plist>
