@@ -10,9 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol NetworkMeasureDelegate <NSObject>
+
+- (void)downloadSpeed:(float)downloadSpeed uploadSpeed:(float)uploadSpeed;
+
+@end
+
 @interface NetworkMeasure : NSObject
 
 + (instancetype)shareClient;
+
+@property (nonatomic, assign) id<NetworkMeasureDelegate> delegate;
 
 //开始检测
 - (void)startMonitor;

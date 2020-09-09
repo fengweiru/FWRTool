@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4930358746F303AE8CD8A9 /* Pods_FWRTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */; };
 		4507523824D2BDCC008C3166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507523724D2BDCC008C3166 /* AppDelegate.m */; };
 		4507523E24D2BDCC008C3166 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507523D24D2BDCC008C3166 /* ViewController.m */; };
 		4507524124D2BDCC008C3166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507523F24D2BDCC008C3166 /* Main.storyboard */; };
@@ -29,6 +30,9 @@
 		450752A524D3AF95008C3166 /* NavigationBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507529B24D3AF94008C3166 /* NavigationBaseController.m */; };
 		450752B824D40A15008C3166 /* MainWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 450752B324D40A15008C3166 /* MainWindowVC.m */; };
 		450752B924D40A15008C3166 /* MainWindowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 450752B624D40A15008C3166 /* MainWindowCell.m */; };
+		4525FEEE25076D8C00C34E6D /* AliOSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEED25076D8C00C34E6D /* AliOSSManager.m */; };
+		4525FEFA250873CC00C34E6D /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEF7250873CC00C34E6D /* SimplePing.m */; };
+		4525FEFB250873CC00C34E6D /* WHPingTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEF9250873CC00C34E6D /* WHPingTester.m */; };
 		453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460DC24D4100E00E27E2A /* ColorPickerVC.m */; };
 		453460E124D4158C00E27E2A /* UIView+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460E024D4158C00E27E2A /* UIView+Color.m */; };
 		453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460E324D7A14300E27E2A /* FWRMagnifierView.m */; };
@@ -74,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2322861BA4375AFFABB0BFAC /* Pods-FWRTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWRTool.release.xcconfig"; path = "Target Support Files/Pods-FWRTool/Pods-FWRTool.release.xcconfig"; sourceTree = "<group>"; };
+		34BF81283379550514D16A5C /* Pods-FWRTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWRTool.debug.xcconfig"; path = "Target Support Files/Pods-FWRTool/Pods-FWRTool.debug.xcconfig"; sourceTree = "<group>"; };
 		4507523324D2BDCC008C3166 /* FWRTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FWRTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4507523624D2BDCC008C3166 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4507523724D2BDCC008C3166 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +126,12 @@
 		450752B424D40A15008C3166 /* MainWindowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowVC.h; sourceTree = "<group>"; };
 		450752B624D40A15008C3166 /* MainWindowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowCell.m; sourceTree = "<group>"; };
 		450752B724D40A15008C3166 /* MainWindowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowCell.h; sourceTree = "<group>"; };
+		4525FEEC25076D8C00C34E6D /* AliOSSManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliOSSManager.h; sourceTree = "<group>"; };
+		4525FEED25076D8C00C34E6D /* AliOSSManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliOSSManager.m; sourceTree = "<group>"; };
+		4525FEF6250873CC00C34E6D /* WHPingTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHPingTester.h; sourceTree = "<group>"; };
+		4525FEF7250873CC00C34E6D /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		4525FEF8250873CC00C34E6D /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		4525FEF9250873CC00C34E6D /* WHPingTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHPingTester.m; sourceTree = "<group>"; };
 		453460DB24D4100E00E27E2A /* ColorPickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerVC.h; sourceTree = "<group>"; };
 		453460DC24D4100E00E27E2A /* ColorPickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerVC.m; sourceTree = "<group>"; };
 		453460DF24D4158C00E27E2A /* UIView+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Color.h"; sourceTree = "<group>"; };
@@ -170,6 +182,7 @@
 		4534624124F6079900E27E2A /* SpeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedModel.h; sourceTree = "<group>"; };
 		4534624224F6079900E27E2A /* SpeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedModel.m; sourceTree = "<group>"; };
 		4534624424F62C1F00E27E2A /* FWRTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FWRTool.entitlements; sourceTree = "<group>"; };
+		95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWRTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4930358746F303AE8CD8A9 /* Pods_FWRTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +211,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC9C24712264D3EB902CBB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4507522A24D2BDCC008C3166 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +226,8 @@
 				4507525424D2BDCD008C3166 /* FWRToolTests */,
 				4507525F24D2BDCD008C3166 /* FWRToolUITests */,
 				4507523424D2BDCC008C3166 /* Products */,
+				8F922E5D9E1729D6303F6196 /* Pods */,
+				0FC9C24712264D3EB902CBB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +294,8 @@
 		4507526F24D2C1EE008C3166 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4525FEEF250871D000C34E6D /* Ping */,
+				4525FEEB25076D6D00C34E6D /* AliOSS */,
 				4534623C24F6073100E27E2A /* Reachability */,
 				4507527624D2C1EE008C3166 /* CommonPickerView.h */,
 				4507527324D2C1EE008C3166 /* CommonPickerView.m */,
@@ -465,6 +491,26 @@
 				4534614224E383A200E27E2A /* ColorSliderView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4525FEEB25076D6D00C34E6D /* AliOSS */ = {
+			isa = PBXGroup;
+			children = (
+				4525FEEC25076D8C00C34E6D /* AliOSSManager.h */,
+				4525FEED25076D8C00C34E6D /* AliOSSManager.m */,
+			);
+			path = AliOSS;
+			sourceTree = "<group>";
+		};
+		4525FEEF250871D000C34E6D /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				4525FEF8250873CC00C34E6D /* SimplePing.h */,
+				4525FEF7250873CC00C34E6D /* SimplePing.m */,
+				4525FEF6250873CC00C34E6D /* WHPingTester.h */,
+				4525FEF9250873CC00C34E6D /* WHPingTester.m */,
+			);
+			path = Ping;
 			sourceTree = "<group>";
 		};
 		453460DE24D412B100E27E2A /* Other */ = {
@@ -691,6 +737,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8F922E5D9E1729D6303F6196 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34BF81283379550514D16A5C /* Pods-FWRTool.debug.xcconfig */,
+				2322861BA4375AFFABB0BFAC /* Pods-FWRTool.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -698,9 +753,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4507526524D2BDCD008C3166 /* Build configuration list for PBXNativeTarget "FWRTool" */;
 			buildPhases = (
+				56273920A368FF25ABF37213 /* [CP] Check Pods Manifest.lock */,
 				4507522F24D2BDCC008C3166 /* Sources */,
 				4507523024D2BDCC008C3166 /* Frameworks */,
 				4507523124D2BDCC008C3166 /* Resources */,
+				33012A45E5BEC164A13F1A27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -817,6 +874,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33012A45E5BEC164A13F1A27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FWRTool/Pods-FWRTool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FWRTool/Pods-FWRTool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FWRTool/Pods-FWRTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56273920A368FF25ABF37213 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FWRTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4507522F24D2BDCC008C3166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -839,7 +938,9 @@
 				450752B824D40A15008C3166 /* MainWindowVC.m in Sources */,
 				4507528824D2C211008C3166 /* UIBarButtonItem+Badge.m in Sources */,
 				453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */,
+				4525FEFA250873CC00C34E6D /* SimplePing.m in Sources */,
 				4507523E24D2BDCC008C3166 /* ViewController.m in Sources */,
+				4525FEEE25076D8C00C34E6D /* AliOSSManager.m in Sources */,
 				450752B924D40A15008C3166 /* MainWindowCell.m in Sources */,
 				4534623724F4E98600E27E2A /* NetworkMeasureVC.m in Sources */,
 				4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */,
@@ -853,6 +954,7 @@
 				4534621E24EE4D1000E27E2A /* WebScreenShotVC.m in Sources */,
 				4507524424D2BDCC008C3166 /* FWRTool.xcdatamodeld in Sources */,
 				4534616424EA612200E27E2A /* RelativeCalculateVC.m in Sources */,
+				4525FEFB250873CC00C34E6D /* WHPingTester.m in Sources */,
 				450752A324D3AF95008C3166 /* WKWebViewVC.m in Sources */,
 				4507523824D2BDCC008C3166 /* AppDelegate.m in Sources */,
 				4534622124EE5ADE00E27E2A /* UIButton+ExpandClick.m in Sources */,
@@ -1029,6 +1131,7 @@
 		};
 		4507526624D2BDCD008C3166 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34BF81283379550514D16A5C /* Pods-FWRTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FWRTool/FWRTool.entitlements;
@@ -1050,6 +1153,7 @@
 		};
 		4507526724D2BDCD008C3166 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2322861BA4375AFFABB0BFAC /* Pods-FWRTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FWRTool/FWRTool.entitlements;

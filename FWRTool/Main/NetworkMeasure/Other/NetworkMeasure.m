@@ -48,12 +48,17 @@ static NetworkMeasure *measure = nil;
 
 - (void)startMonitor {
     [self currentFlow];
-    self.timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(refreshFlow) userInfo:nil repeats:YES];
+    self.timer = [NSTimer timerWithTimeInterval:0.2f target:self selector:@selector(refreshFlow) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)stopMonitor{
     [self.timer invalidate];
+    
+    self.tempWifiSend = 0;
+    self.tempWifiReceived = 0;
+    self.tempWWANSend = 0;
+    self.tempWWANReceived = 0;
 }
 
 - (void)refreshFlow{
@@ -66,16 +71,26 @@ static NetworkMeasure *measure = nil;
         {
             float wifiSend = monitor.wifiSend - self.tempWifiSend;
             float wifiReceived = monitor.wifiReceived - self.tempWifiReceived;
+            wifiSend *= 5;
+            wifiReceived *= 5;
             NSLog(@"wifi上传速度：%@",[NSString stringWithFormat:@"%.0f KB/s",wifiSend]);
             NSLog(@"wifi下载速度：%@",[NSString stringWithFormat:@"%.0f KB/s",wifiReceived]);
+            if (self.delegate && [self.delegate respondsToSelector:@selector(downloadSpeed:uploadSpeed:)]) {
+                [self.delegate downloadSpeed:wifiReceived uploadSpeed:wifiSend];
+            }
         }
             break;
         case ReachableViaWWAN:
         {
             float wwanSend = monitor.wwanSend - self.tempWWANReceived;
             float wwanReceived = monitor.wifiReceived - self.tempWWANSend;
+            wwanSend *= 5;
+            wwanReceived *= 5;
             NSLog(@"wwan上传速度：%@",[NSString stringWithFormat:@"%.0f KB/s",wwanSend]);
             NSLog(@"wwan下载速度：%@",[NSString stringWithFormat:@"%.0f KB/s",wwanReceived]);
+            if (self.delegate && [self.delegate respondsToSelector:@selector(downloadSpeed:uploadSpeed:)]) {
+                [self.delegate downloadSpeed:wwanReceived uploadSpeed:wwanSend];
+            }
         }
             break;
         default:

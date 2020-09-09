@@ -23,6 +23,7 @@
 //
 //#import "UITableView+NoneData.h"
 
+#import <AliyunOSSiOS/OSSService.h>
 //#import <AFNetworking/AFNetworking.h>
 //#import <JSONModel/JSONModel.h>
 //#import <MJRefresh/MJRefresh.h>
