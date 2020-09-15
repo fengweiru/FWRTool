@@ -38,5 +38,11 @@
 		<key>class</key>
 		<string>NetworkMeasureVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>二维码生成</string>
+		<key>class</key>
+		<string>QRCreaterVC</string>
+	</dict>
 </array>
 </plist>

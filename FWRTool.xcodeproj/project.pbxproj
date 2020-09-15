@@ -33,6 +33,8 @@
 		4525FEEE25076D8C00C34E6D /* AliOSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEED25076D8C00C34E6D /* AliOSSManager.m */; };
 		4525FEFA250873CC00C34E6D /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEF7250873CC00C34E6D /* SimplePing.m */; };
 		4525FEFB250873CC00C34E6D /* WHPingTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEF9250873CC00C34E6D /* WHPingTester.m */; };
+		4525FF58250A1E8F00C34E6D /* QRCreaterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FF57250A1E8F00C34E6D /* QRCreaterVC.m */; };
+		4525FF5B250A212000C34E6D /* QREditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FF5A250A212000C34E6D /* QREditVC.m */; };
 		453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460DC24D4100E00E27E2A /* ColorPickerVC.m */; };
 		453460E124D4158C00E27E2A /* UIView+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460E024D4158C00E27E2A /* UIView+Color.m */; };
 		453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 453460E324D7A14300E27E2A /* FWRMagnifierView.m */; };
@@ -58,6 +60,8 @@
 		4534623B24F601E700E27E2A /* NetworkMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623A24F601E700E27E2A /* NetworkMeasure.m */; };
 		4534623F24F6073100E27E2A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623D24F6073100E27E2A /* Reachability.m */; };
 		4534624324F6079900E27E2A /* SpeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534624224F6079900E27E2A /* SpeedModel.m */; };
+		456F381E25105A8B00D3EB31 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F381D25105A8B00D3EB31 /* CloudKit.framework */; };
+		456F3821251064C100D3EB31 /* QRWrittenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3820251064C100D3EB31 /* QRWrittenVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +136,10 @@
 		4525FEF7250873CC00C34E6D /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 		4525FEF8250873CC00C34E6D /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
 		4525FEF9250873CC00C34E6D /* WHPingTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHPingTester.m; sourceTree = "<group>"; };
+		4525FF56250A1E8F00C34E6D /* QRCreaterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCreaterVC.h; sourceTree = "<group>"; };
+		4525FF57250A1E8F00C34E6D /* QRCreaterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCreaterVC.m; sourceTree = "<group>"; };
+		4525FF59250A212000C34E6D /* QREditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QREditVC.h; sourceTree = "<group>"; };
+		4525FF5A250A212000C34E6D /* QREditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QREditVC.m; sourceTree = "<group>"; };
 		453460DB24D4100E00E27E2A /* ColorPickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerVC.h; sourceTree = "<group>"; };
 		453460DC24D4100E00E27E2A /* ColorPickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerVC.m; sourceTree = "<group>"; };
 		453460DF24D4158C00E27E2A /* UIView+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Color.h"; sourceTree = "<group>"; };
@@ -182,6 +190,9 @@
 		4534624124F6079900E27E2A /* SpeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedModel.h; sourceTree = "<group>"; };
 		4534624224F6079900E27E2A /* SpeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedModel.m; sourceTree = "<group>"; };
 		4534624424F62C1F00E27E2A /* FWRTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FWRTool.entitlements; sourceTree = "<group>"; };
+		456F381D25105A8B00D3EB31 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		456F381F251064C100D3EB31 /* QRWrittenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRWrittenVC.h; sourceTree = "<group>"; };
+		456F3820251064C100D3EB31 /* QRWrittenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRWrittenVC.m; sourceTree = "<group>"; };
 		95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWRTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -191,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4930358746F303AE8CD8A9 /* Pods_FWRTool.framework in Frameworks */,
+				456F381E25105A8B00D3EB31 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +226,7 @@
 		0FC9C24712264D3EB902CBB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				456F381D25105A8B00D3EB31 /* CloudKit.framework */,
 				95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */,
 			);
 			name = Frameworks;
@@ -349,6 +362,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4525FF54250A1E3700C34E6D /* QRCreater */,
 				4534623324F4E92200E27E2A /* NetworkMeasure */,
 				4534622E24EF6B6500E27E2A /* DecibelMeter */,
 				4534621724EE4C2B00E27E2A /* WebScreenShot */,
@@ -511,6 +525,27 @@
 				4525FEF9250873CC00C34E6D /* WHPingTester.m */,
 			);
 			path = Ping;
+			sourceTree = "<group>";
+		};
+		4525FF54250A1E3700C34E6D /* QRCreater */ = {
+			isa = PBXGroup;
+			children = (
+				4525FF55250A1E7500C34E6D /* Controller */,
+			);
+			path = QRCreater;
+			sourceTree = "<group>";
+		};
+		4525FF55250A1E7500C34E6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4525FF56250A1E8F00C34E6D /* QRCreaterVC.h */,
+				4525FF57250A1E8F00C34E6D /* QRCreaterVC.m */,
+				4525FF59250A212000C34E6D /* QREditVC.h */,
+				4525FF5A250A212000C34E6D /* QREditVC.m */,
+				456F381F251064C100D3EB31 /* QRWrittenVC.h */,
+				456F3820251064C100D3EB31 /* QRWrittenVC.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		453460DE24D412B100E27E2A /* Other */ = {
@@ -956,13 +991,16 @@
 				4534616424EA612200E27E2A /* RelativeCalculateVC.m in Sources */,
 				4525FEFB250873CC00C34E6D /* WHPingTester.m in Sources */,
 				450752A324D3AF95008C3166 /* WKWebViewVC.m in Sources */,
+				4525FF58250A1E8F00C34E6D /* QRCreaterVC.m in Sources */,
 				4507523824D2BDCC008C3166 /* AppDelegate.m in Sources */,
 				4534622124EE5ADE00E27E2A /* UIButton+ExpandClick.m in Sources */,
 				4507527B24D2C1EE008C3166 /* CommonPickerView.m in Sources */,
+				4525FF5B250A212000C34E6D /* QREditVC.m in Sources */,
 				4534623F24F6073100E27E2A /* Reachability.m in Sources */,
 				4534622724EE6C8300E27E2A /* UIScrollView+ScreenShot.m in Sources */,
 				4534623B24F601E700E27E2A /* NetworkMeasure.m in Sources */,
 				4534614624E3B35E00E27E2A /* UIColor+Conversion.m in Sources */,
+				456F3821251064C100D3EB31 /* QRWrittenVC.m in Sources */,
 				4534614324E383A200E27E2A /* ColorSliderView.m in Sources */,
 				4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */,
 			);

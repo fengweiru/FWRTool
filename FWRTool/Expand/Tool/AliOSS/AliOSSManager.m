@@ -38,7 +38,7 @@ static AliOSSManager *manager = nil;
     if (self = [super init]) {
         NSString *endpoint = @"https://oss-cn-hangzhou.aliyuncs.com";
         // 移动端建议使用STS方式初始化OSSClient。
-        id<OSSCredentialProvider> credential = [[OSSPlainTextAKSKPairCredentialProvider alloc] initWithPlainTextAccessKey:@"LTAI4GBYyFmA14HywcLmwFo3" secretKey:@"GEsfwauoQKOttN2vv1zhYbyPWhiay9"];
+        id<OSSCredentialProvider> credential = [[OSSPlainTextAKSKPairCredentialProvider alloc] initWithPlainTextAccessKey:@"" secretKey:@""];
 
         self.client = [[OSSClient alloc] initWithEndpoint:endpoint credentialProvider:credential];
     }
@@ -62,8 +62,8 @@ static AliOSSManager *manager = nil;
         self.request = nil;
     }
     self.request = [OSSGetObjectRequest new];
-    self.request.bucketName = @"test-updownload";
-    self.request.objectKey = @"WPS_Office_2.6.0(4243).dmg";
+    self.request.bucketName = @"";
+    self.request.objectKey = @"";
     
 //    request.downloadProgress = ^(int64_t bytesWritten, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite) {
 //
@@ -134,8 +134,8 @@ static AliOSSManager *manager = nil;
         self.put = nil;
     }
     self.put = [OSSPutObjectRequest new];
-    self.put.bucketName = @"test-updownload";
-    self.put.objectKey = @"tmp";
+    self.put.bucketName = @"";
+    self.put.objectKey = @"";
     self.put.uploadingData = self.testData;
     
     OSSTask *putTask = [self.client putObject:self.put];
