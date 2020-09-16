@@ -44,5 +44,11 @@
 		<key>class</key>
 		<string>QRCreaterVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>二维码扫描</string>
+		<key>class</key>
+		<string>QRScanCaptureVC</string>
+	</dict>
 </array>
 </plist>

@@ -62,6 +62,8 @@
 		4534624324F6079900E27E2A /* SpeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534624224F6079900E27E2A /* SpeedModel.m */; };
 		456F381E25105A8B00D3EB31 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F381D25105A8B00D3EB31 /* CloudKit.framework */; };
 		456F3821251064C100D3EB31 /* QRWrittenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3820251064C100D3EB31 /* QRWrittenVC.m */; };
+		456F3826251084E300D3EB31 /* QRScanCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3825251084E300D3EB31 /* QRScanCaptureVC.m */; };
+		456F3829251088F100D3EB31 /* QRScanShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3828251088F100D3EB31 /* QRScanShowVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +195,10 @@
 		456F381D25105A8B00D3EB31 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		456F381F251064C100D3EB31 /* QRWrittenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRWrittenVC.h; sourceTree = "<group>"; };
 		456F3820251064C100D3EB31 /* QRWrittenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRWrittenVC.m; sourceTree = "<group>"; };
+		456F3824251084E200D3EB31 /* QRScanCaptureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRScanCaptureVC.h; sourceTree = "<group>"; };
+		456F3825251084E300D3EB31 /* QRScanCaptureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRScanCaptureVC.m; sourceTree = "<group>"; };
+		456F3827251088F100D3EB31 /* QRScanShowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRScanShowVC.h; sourceTree = "<group>"; };
+		456F3828251088F100D3EB31 /* QRScanShowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRScanShowVC.m; sourceTree = "<group>"; };
 		95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWRTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -362,6 +368,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				456F3822251083FE00D3EB31 /* QRScan */,
 				4525FF54250A1E3700C34E6D /* QRCreater */,
 				4534623324F4E92200E27E2A /* NetworkMeasure */,
 				4534622E24EF6B6500E27E2A /* DecibelMeter */,
@@ -772,6 +779,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		456F3822251083FE00D3EB31 /* QRScan */ = {
+			isa = PBXGroup;
+			children = (
+				456F38232510840C00D3EB31 /* Controller */,
+			);
+			path = QRScan;
+			sourceTree = "<group>";
+		};
+		456F38232510840C00D3EB31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				456F3824251084E200D3EB31 /* QRScanCaptureVC.h */,
+				456F3825251084E300D3EB31 /* QRScanCaptureVC.m */,
+				456F3827251088F100D3EB31 /* QRScanShowVC.h */,
+				456F3828251088F100D3EB31 /* QRScanShowVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8F922E5D9E1729D6303F6196 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -965,6 +991,7 @@
 				4534616124E6740900E27E2A /* HeartLine.m in Sources */,
 				4534614024E3812D00E27E2A /* ColorPaletteView.m in Sources */,
 				4507527924D2C1EE008C3166 /* MBProgressHUD.m in Sources */,
+				456F3829251088F100D3EB31 /* QRScanShowVC.m in Sources */,
 				4534622D24EF653A00E27E2A /* PPSnapshotHandler.m in Sources */,
 				450752A524D3AF95008C3166 /* NavigationBaseController.m in Sources */,
 				4534624324F6079900E27E2A /* SpeedModel.m in Sources */,
@@ -989,6 +1016,7 @@
 				4534621E24EE4D1000E27E2A /* WebScreenShotVC.m in Sources */,
 				4507524424D2BDCC008C3166 /* FWRTool.xcdatamodeld in Sources */,
 				4534616424EA612200E27E2A /* RelativeCalculateVC.m in Sources */,
+				456F3826251084E300D3EB31 /* QRScanCaptureVC.m in Sources */,
 				4525FEFB250873CC00C34E6D /* WHPingTester.m in Sources */,
 				450752A324D3AF95008C3166 /* WKWebViewVC.m in Sources */,
 				4525FF58250A1E8F00C34E6D /* QRCreaterVC.m in Sources */,
