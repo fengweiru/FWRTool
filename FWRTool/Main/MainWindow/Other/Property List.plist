@@ -50,5 +50,11 @@
 		<key>class</key>
 		<string>QRScanCaptureVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>直尺</string>
+		<key>class</key>
+		<string>RulerVC</string>
+	</dict>
 </array>
 </plist>

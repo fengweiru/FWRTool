@@ -64,6 +64,8 @@
 		456F3821251064C100D3EB31 /* QRWrittenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3820251064C100D3EB31 /* QRWrittenVC.m */; };
 		456F3826251084E300D3EB31 /* QRScanCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3825251084E300D3EB31 /* QRScanCaptureVC.m */; };
 		456F3829251088F100D3EB31 /* QRScanShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3828251088F100D3EB31 /* QRScanShowVC.m */; };
+		456F38302511DB2500D3EB31 /* RulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F382F2511DB2500D3EB31 /* RulerView.m */; };
+		456F38332511DF6B00D3EB31 /* RulerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F38322511DF6B00D3EB31 /* RulerVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +201,10 @@
 		456F3825251084E300D3EB31 /* QRScanCaptureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRScanCaptureVC.m; sourceTree = "<group>"; };
 		456F3827251088F100D3EB31 /* QRScanShowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRScanShowVC.h; sourceTree = "<group>"; };
 		456F3828251088F100D3EB31 /* QRScanShowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRScanShowVC.m; sourceTree = "<group>"; };
+		456F382E2511DB2500D3EB31 /* RulerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RulerView.h; sourceTree = "<group>"; };
+		456F382F2511DB2500D3EB31 /* RulerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RulerView.m; sourceTree = "<group>"; };
+		456F38312511DF6B00D3EB31 /* RulerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RulerVC.h; sourceTree = "<group>"; };
+		456F38322511DF6B00D3EB31 /* RulerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RulerVC.m; sourceTree = "<group>"; };
 		95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWRTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -368,6 +374,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				456F382A2511DA5A00D3EB31 /* Ruler */,
 				456F3822251083FE00D3EB31 /* QRScan */,
 				4525FF54250A1E3700C34E6D /* QRCreater */,
 				4534623324F4E92200E27E2A /* NetworkMeasure */,
@@ -798,6 +805,33 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		456F382A2511DA5A00D3EB31 /* Ruler */ = {
+			isa = PBXGroup;
+			children = (
+				456F382C2511DA7000D3EB31 /* View */,
+				456F382B2511DA6700D3EB31 /* Controller */,
+			);
+			path = Ruler;
+			sourceTree = "<group>";
+		};
+		456F382B2511DA6700D3EB31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				456F38312511DF6B00D3EB31 /* RulerVC.h */,
+				456F38322511DF6B00D3EB31 /* RulerVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		456F382C2511DA7000D3EB31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				456F382E2511DB2500D3EB31 /* RulerView.h */,
+				456F382F2511DB2500D3EB31 /* RulerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8F922E5D9E1729D6303F6196 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1007,8 +1041,10 @@
 				4534623724F4E98600E27E2A /* NetworkMeasureVC.m in Sources */,
 				4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */,
 				4534622424EE682200E27E2A /* WebViewBrowseVC.m in Sources */,
+				456F38302511DB2500D3EB31 /* RulerView.m in Sources */,
 				4507528924D2C211008C3166 /* UIView+FFrame.m in Sources */,
 				453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */,
+				456F38332511DF6B00D3EB31 /* RulerVC.m in Sources */,
 				4507528A24D2C211008C3166 /* UIButton+Badge.m in Sources */,
 				4507528B24D2C211008C3166 /* UIView+Toast.m in Sources */,
 				4534615824E4CE9E00E27E2A /* HeartRateVC.m in Sources */,

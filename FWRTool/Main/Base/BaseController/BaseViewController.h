@@ -22,5 +22,6 @@
 - (void)clickLeftItem:(UIButton *)sender;
 - (void)clickRightItem:(UIButton *)sender;
 
+- (void)clickForBack:(UIButton *)sender;
 
 @end
