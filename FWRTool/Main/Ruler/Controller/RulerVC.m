@@ -55,7 +55,7 @@
     if (!_backButton) {
         _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _backButton.frame = CGRectMake(kScreenW/2-22, Height_For_AppHeader, 44, 44);
-        [_backButton setImage:[UIImage imageNamed:@"back1"] forState:UIControlStateNormal];
+        [_backButton setImage:[UIImage imageNamed:@"back1-blue"] forState:UIControlStateNormal];
         [_backButton addTarget:self action:@selector(clickForBack:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _backButton;

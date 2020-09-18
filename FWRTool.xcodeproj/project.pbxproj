@@ -60,6 +60,8 @@
 		4534623B24F601E700E27E2A /* NetworkMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623A24F601E700E27E2A /* NetworkMeasure.m */; };
 		4534623F24F6073100E27E2A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623D24F6073100E27E2A /* Reachability.m */; };
 		4534624324F6079900E27E2A /* SpeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534624224F6079900E27E2A /* SpeedModel.m */; };
+		45691E3F25132B0900A9177C /* ProtractorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45691E3E25132B0900A9177C /* ProtractorVC.m */; };
+		45691E4325132C0F00A9177C /* ProtractorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45691E4225132C0F00A9177C /* ProtractorView.m */; };
 		456F381E25105A8B00D3EB31 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F381D25105A8B00D3EB31 /* CloudKit.framework */; };
 		456F3821251064C100D3EB31 /* QRWrittenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3820251064C100D3EB31 /* QRWrittenVC.m */; };
 		456F3826251084E300D3EB31 /* QRScanCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3825251084E300D3EB31 /* QRScanCaptureVC.m */; };
@@ -194,6 +196,10 @@
 		4534624124F6079900E27E2A /* SpeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedModel.h; sourceTree = "<group>"; };
 		4534624224F6079900E27E2A /* SpeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedModel.m; sourceTree = "<group>"; };
 		4534624424F62C1F00E27E2A /* FWRTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FWRTool.entitlements; sourceTree = "<group>"; };
+		45691E3D25132B0900A9177C /* ProtractorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtractorVC.h; sourceTree = "<group>"; };
+		45691E3E25132B0900A9177C /* ProtractorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtractorVC.m; sourceTree = "<group>"; };
+		45691E4125132C0F00A9177C /* ProtractorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtractorView.h; sourceTree = "<group>"; };
+		45691E4225132C0F00A9177C /* ProtractorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtractorView.m; sourceTree = "<group>"; };
 		456F381D25105A8B00D3EB31 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		456F381F251064C100D3EB31 /* QRWrittenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRWrittenVC.h; sourceTree = "<group>"; };
 		456F3820251064C100D3EB31 /* QRWrittenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRWrittenVC.m; sourceTree = "<group>"; };
@@ -374,6 +380,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				45691E3B25132AD700A9177C /* Protractor */,
 				456F382A2511DA5A00D3EB31 /* Ruler */,
 				456F3822251083FE00D3EB31 /* QRScan */,
 				4525FF54250A1E3700C34E6D /* QRCreater */,
@@ -786,6 +793,33 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		45691E3B25132AD700A9177C /* Protractor */ = {
+			isa = PBXGroup;
+			children = (
+				45691E4025132BF400A9177C /* View */,
+				45691E3C25132AED00A9177C /* Controller */,
+			);
+			path = Protractor;
+			sourceTree = "<group>";
+		};
+		45691E3C25132AED00A9177C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45691E3D25132B0900A9177C /* ProtractorVC.h */,
+				45691E3E25132B0900A9177C /* ProtractorVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		45691E4025132BF400A9177C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45691E4125132C0F00A9177C /* ProtractorView.h */,
+				45691E4225132C0F00A9177C /* ProtractorView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		456F3822251083FE00D3EB31 /* QRScan */ = {
 			isa = PBXGroup;
 			children = (
@@ -1038,10 +1072,12 @@
 				4507523E24D2BDCC008C3166 /* ViewController.m in Sources */,
 				4525FEEE25076D8C00C34E6D /* AliOSSManager.m in Sources */,
 				450752B924D40A15008C3166 /* MainWindowCell.m in Sources */,
+				45691E4325132C0F00A9177C /* ProtractorView.m in Sources */,
 				4534623724F4E98600E27E2A /* NetworkMeasureVC.m in Sources */,
 				4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */,
 				4534622424EE682200E27E2A /* WebViewBrowseVC.m in Sources */,
 				456F38302511DB2500D3EB31 /* RulerView.m in Sources */,
+				45691E3F25132B0900A9177C /* ProtractorVC.m in Sources */,
 				4507528924D2C211008C3166 /* UIView+FFrame.m in Sources */,
 				453460DD24D4100E00E27E2A /* ColorPickerVC.m in Sources */,
 				456F38332511DF6B00D3EB31 /* RulerVC.m in Sources */,

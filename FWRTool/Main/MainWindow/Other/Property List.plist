@@ -56,5 +56,11 @@
 		<key>class</key>
 		<string>RulerVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>量角器</string>
+		<key>class</key>
+		<string>ProtractorVC</string>
+	</dict>
 </array>
 </plist>

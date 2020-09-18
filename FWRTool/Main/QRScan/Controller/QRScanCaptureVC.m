@@ -39,7 +39,7 @@
         //输出流delegate,在主线程刷新UI
         [output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
         AVCaptureVideoPreviewLayer *videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_session];//预览
-        videoPreviewLayer.frame = self.view.bounds;
+        videoPreviewLayer.frame = CGRectMake(0, Height_For_AppHeader, self.view.bounds.size.width, kScreenH-Height_For_AppHeader);
         [self.view.layer insertSublayer:videoPreviewLayer atIndex:0];//添加预览图层
         //还可以设置扫描范围 output.rectOfInterest  不设置默认为全屏
     }
@@ -68,9 +68,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"二维码扫描";
-    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
-    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-
     
     if ([self judgeCameraLimits]) {
         //开始扫描
@@ -139,10 +136,10 @@
 
 - (void)dealloc
 {
-    if (_session) {
+    if ([self judgeCameraLimits] && _session) {
         [_session stopRunning];
-        _session = nil;
     }
+    _session = nil;
 }
 
 - (BOOL)judgeCameraLimits{

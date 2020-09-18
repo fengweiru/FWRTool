@@ -38,7 +38,7 @@ static const CGFloat endX  = 100;
         self.layer.masksToBounds = true;
         self.layer.cornerRadius = 3;
         self.layer.borderWidth = 1;
-        self.layer.borderColor = [[UIColor blackColor] CGColor];
+        self.layer.borderColor = [CommonBlueColor CGColor];
         self.rulerType = rulerType;
         
         self.pmm = [self getPmmForOnemm];
@@ -56,6 +56,7 @@ static const CGFloat endX  = 100;
             CGFloat y = self.pmm*i;
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15, y, 20, 20)];
             label.textAlignment = NSTextAlignmentCenter;
+            label.textColor = CommonBlueColor;
             label.text = [NSString stringWithFormat:@"%zi",i/10];
             [label setTransform:CGAffineTransformMakeRotation(M_PI_2)];
             [self addSubview:label];
@@ -63,6 +64,7 @@ static const CGFloat endX  = 100;
         
         UILabel *unit = [[UILabel alloc] initWithFrame:CGRectMake(-40, 50, 100, 30)];
         unit.textAlignment = NSTextAlignmentCenter;
+        unit.textColor = CommonBlueColor;
         unit.text = unitStr;
         unit.font = [UIFont systemFontOfSize:12];
         [unit setTransform:CGAffineTransformMakeRotation(M_PI_2)];
@@ -98,7 +100,7 @@ static const CGFloat endX  = 100;
     CGContextAddLineToPoint(context, endX, 10);
     
     CGContextSetLineWidth(context, 1);
-    CGContextSetStrokeColorWithColor(context, [[UIColor blackColor] CGColor]);
+    CGContextSetStrokeColorWithColor(context, [CommonBlueColor CGColor]);
     CGContextStrokePath(context);
 }
 
