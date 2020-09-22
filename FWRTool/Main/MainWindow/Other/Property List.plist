@@ -62,5 +62,11 @@
 		<key>class</key>
 		<string>ProtractorVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>一键拨号</string>
+		<key>class</key>
+		<string>FixedDialingNumberVC</string>
+	</dict>
 </array>
 </plist>

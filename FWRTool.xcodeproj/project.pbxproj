@@ -68,6 +68,8 @@
 		456F3829251088F100D3EB31 /* QRScanShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3828251088F100D3EB31 /* QRScanShowVC.m */; };
 		456F38302511DB2500D3EB31 /* RulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F382F2511DB2500D3EB31 /* RulerView.m */; };
 		456F38332511DF6B00D3EB31 /* RulerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F38322511DF6B00D3EB31 /* RulerVC.m */; };
+		459BFD4E251895BB00D56DFE /* FixedDialingNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 459BFD4D251895BB00D56DFE /* FixedDialingNumberVC.m */; };
+		459BFD5725189B2600D56DFE /* DialingNumber.plist in Resources */ = {isa = PBXBuildFile; fileRef = 459BFD5625189B2600D56DFE /* DialingNumber.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +213,9 @@
 		456F382F2511DB2500D3EB31 /* RulerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RulerView.m; sourceTree = "<group>"; };
 		456F38312511DF6B00D3EB31 /* RulerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RulerVC.h; sourceTree = "<group>"; };
 		456F38322511DF6B00D3EB31 /* RulerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RulerVC.m; sourceTree = "<group>"; };
+		459BFD4C251895BB00D56DFE /* FixedDialingNumberVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedDialingNumberVC.h; sourceTree = "<group>"; };
+		459BFD4D251895BB00D56DFE /* FixedDialingNumberVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixedDialingNumberVC.m; sourceTree = "<group>"; };
+		459BFD5625189B2600D56DFE /* DialingNumber.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DialingNumber.plist; sourceTree = "<group>"; };
 		95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWRTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -380,6 +385,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				459BFD4A2518957400D56DFE /* FixedDialingNumber */,
 				45691E3B25132AD700A9177C /* Protractor */,
 				456F382A2511DA5A00D3EB31 /* Ruler */,
 				456F3822251083FE00D3EB31 /* QRScan */,
@@ -866,6 +872,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		459BFD4A2518957400D56DFE /* FixedDialingNumber */ = {
+			isa = PBXGroup;
+			children = (
+				459BFD5525189AFE00D56DFE /* Other */,
+				459BFD4B2518958000D56DFE /* Controller */,
+			);
+			path = FixedDialingNumber;
+			sourceTree = "<group>";
+		};
+		459BFD4B2518958000D56DFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				459BFD4C251895BB00D56DFE /* FixedDialingNumberVC.h */,
+				459BFD4D251895BB00D56DFE /* FixedDialingNumberVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		459BFD5525189AFE00D56DFE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				459BFD5625189B2600D56DFE /* DialingNumber.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		8F922E5D9E1729D6303F6196 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -982,6 +1014,7 @@
 			files = (
 				4507524924D2BDCD008C3166 /* LaunchScreen.storyboard in Resources */,
 				4507524624D2BDCD008C3166 /* Assets.xcassets in Resources */,
+				459BFD5725189B2600D56DFE /* DialingNumber.plist in Resources */,
 				4534615524E4CE3500E27E2A /* Property List.plist in Resources */,
 				4507524124D2BDCC008C3166 /* Main.storyboard in Resources */,
 			);
@@ -1055,6 +1088,7 @@
 				450752A424D3AF95008C3166 /* BaseViewController.m in Sources */,
 				4534623224EF6B8B00E27E2A /* DecibelMeterVC.m in Sources */,
 				450752A124D3AF95008C3166 /* TabbarBaseVC.m in Sources */,
+				459BFD4E251895BB00D56DFE /* FixedDialingNumberVC.m in Sources */,
 				4534616C24EB5D2B00E27E2A /* CalculatorVC.m in Sources */,
 				4534616124E6740900E27E2A /* HeartLine.m in Sources */,
 				4534614024E3812D00E27E2A /* ColorPaletteView.m in Sources */,
