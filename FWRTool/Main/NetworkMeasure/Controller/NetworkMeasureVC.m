@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, NetworkMeasureStatus) {
 @property (nonatomic, strong) NSMutableArray *dowloadSpeedArr;
 @property (nonatomic, strong) NSMutableArray *uploadSpeedArr;
 
+@property (nonatomic, strong) UIButton *button;
+
 @end
 
 @implementation NetworkMeasureVC
@@ -75,6 +77,19 @@ typedef NS_ENUM(NSInteger, NetworkMeasureStatus) {
     return _uploadLabel;
 }
 
+- (UIButton *)button
+{
+    if (!_button) {
+        _button = [UIButton buttonWithType:UIButtonTypeCustom];
+        _button.frame = CGRectMake(kScreenW/2-75, 500, 150, 50);
+        [_button setTitle:@"开始" forState:UIControlStateNormal];
+        [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        [_button addTarget:self action:@selector(startTest:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _button;
+}
+
 - (instancetype)init
 {
     if (self = [super init]) {
@@ -91,11 +106,16 @@ typedef NS_ENUM(NSInteger, NetworkMeasureStatus) {
     [self.view addSubview:self.netDelayLablel];
     [self.view addSubview:self.downloadLabel];
     [self.view addSubview:self.uploadLabel];
+//    [self.view addSubview:self.button];
     
     self.pingTester = [[WHPingTester alloc] initWithHostName:@"www.baidu.com"];
     self.pingTester.delegate = self;
     [self.pingTester startPing];
+}
 
+- (void)startTest:(UIButton *)sender
+{
+    [self.pingTester startPing];
 }
 
 - (void)didPingSucccessWithTime:(float)time withError:(NSError *)error

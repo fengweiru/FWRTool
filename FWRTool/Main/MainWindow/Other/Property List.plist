@@ -68,5 +68,11 @@
 		<key>class</key>
 		<string>FixedDialingNumberVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>照片exif</string>
+		<key>class</key>
+		<string>PictureExifVC</string>
+	</dict>
 </array>
 </plist>

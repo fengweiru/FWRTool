@@ -30,6 +30,7 @@
 		450752A524D3AF95008C3166 /* NavigationBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507529B24D3AF94008C3166 /* NavigationBaseController.m */; };
 		450752B824D40A15008C3166 /* MainWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 450752B324D40A15008C3166 /* MainWindowVC.m */; };
 		450752B924D40A15008C3166 /* MainWindowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 450752B624D40A15008C3166 /* MainWindowCell.m */; };
+		4514AA002519A2E6009EABBD /* PictureExifVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514A9FF2519A2E6009EABBD /* PictureExifVC.m */; };
 		4525FEEE25076D8C00C34E6D /* AliOSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEED25076D8C00C34E6D /* AliOSSManager.m */; };
 		4525FEFA250873CC00C34E6D /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEF7250873CC00C34E6D /* SimplePing.m */; };
 		4525FEFB250873CC00C34E6D /* WHPingTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525FEF9250873CC00C34E6D /* WHPingTester.m */; };
@@ -70,6 +71,7 @@
 		456F38332511DF6B00D3EB31 /* RulerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F38322511DF6B00D3EB31 /* RulerVC.m */; };
 		459BFD4E251895BB00D56DFE /* FixedDialingNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 459BFD4D251895BB00D56DFE /* FixedDialingNumberVC.m */; };
 		459BFD5725189B2600D56DFE /* DialingNumber.plist in Resources */ = {isa = PBXBuildFile; fileRef = 459BFD5625189B2600D56DFE /* DialingNumber.plist */; };
+		45D5509D2521B5F900B9780B /* ExifInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D5509C2521B5F800B9780B /* ExifInfoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		450752B424D40A15008C3166 /* MainWindowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowVC.h; sourceTree = "<group>"; };
 		450752B624D40A15008C3166 /* MainWindowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowCell.m; sourceTree = "<group>"; };
 		450752B724D40A15008C3166 /* MainWindowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowCell.h; sourceTree = "<group>"; };
+		4514A9FE2519A2E6009EABBD /* PictureExifVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureExifVC.h; sourceTree = "<group>"; };
+		4514A9FF2519A2E6009EABBD /* PictureExifVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureExifVC.m; sourceTree = "<group>"; };
 		4525FEEC25076D8C00C34E6D /* AliOSSManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliOSSManager.h; sourceTree = "<group>"; };
 		4525FEED25076D8C00C34E6D /* AliOSSManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliOSSManager.m; sourceTree = "<group>"; };
 		4525FEF6250873CC00C34E6D /* WHPingTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHPingTester.h; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 		459BFD4C251895BB00D56DFE /* FixedDialingNumberVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedDialingNumberVC.h; sourceTree = "<group>"; };
 		459BFD4D251895BB00D56DFE /* FixedDialingNumberVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixedDialingNumberVC.m; sourceTree = "<group>"; };
 		459BFD5625189B2600D56DFE /* DialingNumber.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DialingNumber.plist; sourceTree = "<group>"; };
+		45D5509B2521B5F800B9780B /* ExifInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExifInfoCell.h; sourceTree = "<group>"; };
+		45D5509C2521B5F800B9780B /* ExifInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExifInfoCell.m; sourceTree = "<group>"; };
 		95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWRTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -385,6 +391,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4514A9FC2519A26E009EABBD /* PictureExif */,
 				459BFD4A2518957400D56DFE /* FixedDialingNumber */,
 				45691E3B25132AD700A9177C /* Protractor */,
 				456F382A2511DA5A00D3EB31 /* Ruler */,
@@ -532,6 +539,24 @@
 				4534614224E383A200E27E2A /* ColorSliderView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4514A9FC2519A26E009EABBD /* PictureExif */ = {
+			isa = PBXGroup;
+			children = (
+				45D5509A2521B5D200B9780B /* View */,
+				4514A9FD2519A2A8009EABBD /* Controller */,
+			);
+			path = PictureExif;
+			sourceTree = "<group>";
+		};
+		4514A9FD2519A2A8009EABBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4514A9FE2519A2E6009EABBD /* PictureExifVC.h */,
+				4514A9FF2519A2E6009EABBD /* PictureExifVC.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		4525FEEB25076D6D00C34E6D /* AliOSS */ = {
@@ -898,6 +923,15 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		45D5509A2521B5D200B9780B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45D5509B2521B5F800B9780B /* ExifInfoCell.h */,
+				45D5509C2521B5F800B9780B /* ExifInfoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8F922E5D9E1729D6303F6196 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1108,6 +1142,7 @@
 				450752B924D40A15008C3166 /* MainWindowCell.m in Sources */,
 				45691E4325132C0F00A9177C /* ProtractorView.m in Sources */,
 				4534623724F4E98600E27E2A /* NetworkMeasureVC.m in Sources */,
+				45D5509D2521B5F900B9780B /* ExifInfoCell.m in Sources */,
 				4534621624EBC9B600E27E2A /* UnderlineTextField.m in Sources */,
 				4534622424EE682200E27E2A /* WebViewBrowseVC.m in Sources */,
 				456F38302511DB2500D3EB31 /* RulerView.m in Sources */,
@@ -1124,6 +1159,7 @@
 				4534616424EA612200E27E2A /* RelativeCalculateVC.m in Sources */,
 				456F3826251084E300D3EB31 /* QRScanCaptureVC.m in Sources */,
 				4525FEFB250873CC00C34E6D /* WHPingTester.m in Sources */,
+				4514AA002519A2E6009EABBD /* PictureExifVC.m in Sources */,
 				450752A324D3AF95008C3166 /* WKWebViewVC.m in Sources */,
 				4525FF58250A1E8F00C34E6D /* QRCreaterVC.m in Sources */,
 				4507523824D2BDCC008C3166 /* AppDelegate.m in Sources */,
@@ -1311,7 +1347,7 @@
 				DEVELOPMENT_TEAM = S8CN552LVB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FWRTool/Tool-Prefix.pch";
 				INFOPLIST_FILE = FWRTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1333,7 +1369,7 @@
 				DEVELOPMENT_TEAM = S8CN552LVB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FWRTool/Tool-Prefix.pch";
 				INFOPLIST_FILE = FWRTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
