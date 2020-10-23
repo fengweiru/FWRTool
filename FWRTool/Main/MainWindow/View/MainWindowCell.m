@@ -28,6 +28,9 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+        self.contentView.backgroundColor = [UIColor whiteColor];
+        self.contentView.layer.masksToBounds = true;
+        self.contentView.layer.cornerRadius = 4;
         [self.contentView addSubview:self.title];
         self.title.frame = self.contentView.bounds;
     }

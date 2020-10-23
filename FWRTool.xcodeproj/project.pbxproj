@@ -71,6 +71,10 @@
 		456F38332511DF6B00D3EB31 /* RulerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F38322511DF6B00D3EB31 /* RulerVC.m */; };
 		459BFD4E251895BB00D56DFE /* FixedDialingNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 459BFD4D251895BB00D56DFE /* FixedDialingNumberVC.m */; };
 		459BFD5725189B2600D56DFE /* DialingNumber.plist in Resources */ = {isa = PBXBuildFile; fileRef = 459BFD5625189B2600D56DFE /* DialingNumber.plist */; };
+		45C821F9253D80D70000A8FB /* HuarongRoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C821F8253D80D70000A8FB /* HuarongRoadVC.m */; };
+		45C82203253D84020000A8FB /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C82202253D84020000A8FB /* PersonView.m */; };
+		45C82216254004C70000A8FB /* PersonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C82215254004C70000A8FB /* PersonManager.m */; };
+		45C8222025400A550000A8FB /* PointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C8221F25400A550000A8FB /* PointModel.m */; };
 		45D5509D2521B5F900B9780B /* ExifInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D5509C2521B5F800B9780B /* ExifInfoCell.m */; };
 /* End PBXBuildFile section */
 
@@ -220,6 +224,14 @@
 		459BFD4C251895BB00D56DFE /* FixedDialingNumberVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedDialingNumberVC.h; sourceTree = "<group>"; };
 		459BFD4D251895BB00D56DFE /* FixedDialingNumberVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixedDialingNumberVC.m; sourceTree = "<group>"; };
 		459BFD5625189B2600D56DFE /* DialingNumber.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DialingNumber.plist; sourceTree = "<group>"; };
+		45C821F7253D80D70000A8FB /* HuarongRoadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HuarongRoadVC.h; sourceTree = "<group>"; };
+		45C821F8253D80D70000A8FB /* HuarongRoadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuarongRoadVC.m; sourceTree = "<group>"; };
+		45C82201253D84020000A8FB /* PersonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
+		45C82202253D84020000A8FB /* PersonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
+		45C82214254004C70000A8FB /* PersonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonManager.h; sourceTree = "<group>"; };
+		45C82215254004C70000A8FB /* PersonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonManager.m; sourceTree = "<group>"; };
+		45C8221E25400A550000A8FB /* PointModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointModel.h; sourceTree = "<group>"; };
+		45C8221F25400A550000A8FB /* PointModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointModel.m; sourceTree = "<group>"; };
 		45D5509B2521B5F800B9780B /* ExifInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExifInfoCell.h; sourceTree = "<group>"; };
 		45D5509C2521B5F800B9780B /* ExifInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExifInfoCell.m; sourceTree = "<group>"; };
 		95380A4A099AC78843C2AF6B /* Pods_FWRTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWRTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +403,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				45C821F5253D80B30000A8FB /* HuarongRoad */,
 				4514A9FC2519A26E009EABBD /* PictureExif */,
 				459BFD4A2518957400D56DFE /* FixedDialingNumber */,
 				45691E3B25132AD700A9177C /* Protractor */,
@@ -923,6 +936,53 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		45C821F5253D80B30000A8FB /* HuarongRoad */ = {
+			isa = PBXGroup;
+			children = (
+				45C8221D25400A3F0000A8FB /* Model */,
+				45C82213253FD8CE0000A8FB /* Other */,
+				45C82200253D82AA0000A8FB /* View */,
+				45C821F6253D80BA0000A8FB /* Controller */,
+			);
+			path = HuarongRoad;
+			sourceTree = "<group>";
+		};
+		45C821F6253D80BA0000A8FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45C821F7253D80D70000A8FB /* HuarongRoadVC.h */,
+				45C821F8253D80D70000A8FB /* HuarongRoadVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		45C82200253D82AA0000A8FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45C82201253D84020000A8FB /* PersonView.h */,
+				45C82202253D84020000A8FB /* PersonView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45C82213253FD8CE0000A8FB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				45C82214254004C70000A8FB /* PersonManager.h */,
+				45C82215254004C70000A8FB /* PersonManager.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		45C8221D25400A3F0000A8FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45C8221E25400A550000A8FB /* PointModel.h */,
+				45C8221F25400A550000A8FB /* PointModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		45D5509A2521B5D200B9780B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1121,7 +1181,9 @@
 				4534615E24E659ED00E27E2A /* HeartRateManager.m in Sources */,
 				450752A424D3AF95008C3166 /* BaseViewController.m in Sources */,
 				4534623224EF6B8B00E27E2A /* DecibelMeterVC.m in Sources */,
+				45C82216254004C70000A8FB /* PersonManager.m in Sources */,
 				450752A124D3AF95008C3166 /* TabbarBaseVC.m in Sources */,
+				45C8222025400A550000A8FB /* PointModel.m in Sources */,
 				459BFD4E251895BB00D56DFE /* FixedDialingNumberVC.m in Sources */,
 				4534616C24EB5D2B00E27E2A /* CalculatorVC.m in Sources */,
 				4534616124E6740900E27E2A /* HeartLine.m in Sources */,
@@ -1134,6 +1196,7 @@
 				4507527A24D2C1EE008C3166 /* CommonClass.m in Sources */,
 				453460E124D4158C00E27E2A /* UIView+Color.m in Sources */,
 				450752B824D40A15008C3166 /* MainWindowVC.m in Sources */,
+				45C82203253D84020000A8FB /* PersonView.m in Sources */,
 				4507528824D2C211008C3166 /* UIBarButtonItem+Badge.m in Sources */,
 				453460E424D7A14300E27E2A /* FWRMagnifierView.m in Sources */,
 				4525FEFA250873CC00C34E6D /* SimplePing.m in Sources */,
@@ -1172,6 +1235,7 @@
 				4534614624E3B35E00E27E2A /* UIColor+Conversion.m in Sources */,
 				456F3821251064C100D3EB31 /* QRWrittenVC.m in Sources */,
 				4534614324E383A200E27E2A /* ColorSliderView.m in Sources */,
+				45C821F9253D80D70000A8FB /* HuarongRoadVC.m in Sources */,
 				4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

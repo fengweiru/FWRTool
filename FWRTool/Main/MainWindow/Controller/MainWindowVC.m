@@ -28,13 +28,14 @@
         layout.minimumInteritemSpacing = 30;
         layout.minimumLineSpacing = 30;
         layout.sectionInset = UIEdgeInsetsMake(30, 30, 30, 30);
-        layout.itemSize = CGSizeMake((kScreenW-90)/2, 40);
+        layout.itemSize = CGSizeMake((kScreenW-90)/2, 50);
         [layout setScrollDirection:UICollectionViewScrollDirectionVertical];
         
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, kScreenH) collectionViewLayout:layout];
         _collectionView.backgroundColor = [UIColor clearColor];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
+        _collectionView.bounces = true;
         
         [_collectionView registerClass:[MainWindowCell class] forCellWithReuseIdentifier:@"MainWindowCell"];
     }
@@ -44,20 +45,22 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:true animated:true];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
-    [self.navigationController setNavigationBarHidden:false animated:true];
+
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.navigationController.navigationBar setBackgroundImage:[CommonClass createImageWithColor:CommonBlueColor withFrame:CGRectMake(0, 0, kScreenW, 88)] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.translucent = false;
     self.view.backgroundColor = Color_Background;
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Property List" ofType:@"plist"];

@@ -74,5 +74,11 @@
 		<key>class</key>
 		<string>PictureExifVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>三国华容道</string>
+		<key>class</key>
+		<string>HuarongRoadVC</string>
+	</dict>
 </array>
 </plist>
