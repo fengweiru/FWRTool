@@ -80,5 +80,11 @@
 		<key>class</key>
 		<string>HuarongRoadVC</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>2048</string>
+		<key>class</key>
+		<string>Play2048VC</string>
+	</dict>
 </array>
 </plist>

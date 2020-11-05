@@ -61,6 +61,10 @@
 		4534623B24F601E700E27E2A /* NetworkMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623A24F601E700E27E2A /* NetworkMeasure.m */; };
 		4534623F24F6073100E27E2A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534623D24F6073100E27E2A /* Reachability.m */; };
 		4534624324F6079900E27E2A /* SpeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4534624224F6079900E27E2A /* SpeedModel.m */; };
+		4553E47525529C3D003D4220 /* BlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4553E47425529C3D003D4220 /* BlockModel.m */; };
+		456239A025490E33000AB300 /* Play2048VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562399F25490E33000AB300 /* Play2048VC.m */; };
+		456239A725490E6A000AB300 /* Play2048Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 456239A625490E6A000AB300 /* Play2048Manager.m */; };
+		456239B125490E98000AB300 /* BlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456239B025490E98000AB300 /* BlockView.m */; };
 		45691E3F25132B0900A9177C /* ProtractorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45691E3E25132B0900A9177C /* ProtractorVC.m */; };
 		45691E4325132C0F00A9177C /* ProtractorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45691E4225132C0F00A9177C /* ProtractorView.m */; };
 		456F381E25105A8B00D3EB31 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F381D25105A8B00D3EB31 /* CloudKit.framework */; };
@@ -206,6 +210,14 @@
 		4534624124F6079900E27E2A /* SpeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedModel.h; sourceTree = "<group>"; };
 		4534624224F6079900E27E2A /* SpeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedModel.m; sourceTree = "<group>"; };
 		4534624424F62C1F00E27E2A /* FWRTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FWRTool.entitlements; sourceTree = "<group>"; };
+		4553E47325529C3D003D4220 /* BlockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockModel.h; sourceTree = "<group>"; };
+		4553E47425529C3D003D4220 /* BlockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockModel.m; sourceTree = "<group>"; };
+		4562399E25490E33000AB300 /* Play2048VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Play2048VC.h; sourceTree = "<group>"; };
+		4562399F25490E33000AB300 /* Play2048VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Play2048VC.m; sourceTree = "<group>"; };
+		456239A525490E6A000AB300 /* Play2048Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Play2048Manager.h; sourceTree = "<group>"; };
+		456239A625490E6A000AB300 /* Play2048Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Play2048Manager.m; sourceTree = "<group>"; };
+		456239AF25490E98000AB300 /* BlockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockView.h; sourceTree = "<group>"; };
+		456239B025490E98000AB300 /* BlockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockView.m; sourceTree = "<group>"; };
 		45691E3D25132B0900A9177C /* ProtractorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtractorVC.h; sourceTree = "<group>"; };
 		45691E3E25132B0900A9177C /* ProtractorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtractorVC.m; sourceTree = "<group>"; };
 		45691E4125132C0F00A9177C /* ProtractorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtractorView.h; sourceTree = "<group>"; };
@@ -403,6 +415,7 @@
 		4507529124D3AF58008C3166 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4562399325490CBE000AB300 /* 2048 */,
 				45C821F5253D80B30000A8FB /* HuarongRoad */,
 				4514A9FC2519A26E009EABBD /* PictureExif */,
 				459BFD4A2518957400D56DFE /* FixedDialingNumber */,
@@ -837,6 +850,53 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4553E47225529C2C003D4220 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4553E47325529C3D003D4220 /* BlockModel.h */,
+				4553E47425529C3D003D4220 /* BlockModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4562399325490CBE000AB300 /* 2048 */ = {
+			isa = PBXGroup;
+			children = (
+				4553E47225529C2C003D4220 /* Model */,
+				456239AE25490E6E000AB300 /* View */,
+				456239A425490E4E000AB300 /* Other */,
+				4562399425490CD2000AB300 /* Controller */,
+			);
+			path = 2048;
+			sourceTree = "<group>";
+		};
+		4562399425490CD2000AB300 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4562399E25490E33000AB300 /* Play2048VC.h */,
+				4562399F25490E33000AB300 /* Play2048VC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		456239A425490E4E000AB300 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				456239A525490E6A000AB300 /* Play2048Manager.h */,
+				456239A625490E6A000AB300 /* Play2048Manager.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		456239AE25490E6E000AB300 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				456239AF25490E98000AB300 /* BlockView.h */,
+				456239B025490E98000AB300 /* BlockView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		45691E3B25132AD700A9177C /* Protractor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1180,6 +1240,8 @@
 				4507524C24D2BDCD008C3166 /* main.m in Sources */,
 				4534615E24E659ED00E27E2A /* HeartRateManager.m in Sources */,
 				450752A424D3AF95008C3166 /* BaseViewController.m in Sources */,
+				4553E47525529C3D003D4220 /* BlockModel.m in Sources */,
+				456239B125490E98000AB300 /* BlockView.m in Sources */,
 				4534623224EF6B8B00E27E2A /* DecibelMeterVC.m in Sources */,
 				45C82216254004C70000A8FB /* PersonManager.m in Sources */,
 				450752A124D3AF95008C3166 /* TabbarBaseVC.m in Sources */,
@@ -1235,6 +1297,8 @@
 				4534614624E3B35E00E27E2A /* UIColor+Conversion.m in Sources */,
 				456F3821251064C100D3EB31 /* QRWrittenVC.m in Sources */,
 				4534614324E383A200E27E2A /* ColorSliderView.m in Sources */,
+				456239A025490E33000AB300 /* Play2048VC.m in Sources */,
+				456239A725490E6A000AB300 /* Play2048Manager.m in Sources */,
 				45C821F9253D80D70000A8FB /* HuarongRoadVC.m in Sources */,
 				4534622A24EE715E00E27E2A /* ScreenImageBrowseVC.m in Sources */,
 			);

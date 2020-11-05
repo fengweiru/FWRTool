@@ -412,7 +412,9 @@
         } else if (swipeG.direction == UISwipeGestureRecognizerDirectionRight) {
             frame.origin.x += singleLength;
         }
-        personView.frame = frame;
+        [UIView animateWithDuration:0.2f animations:^{
+            personView.frame = frame;
+        }];
         
         [self judgeResult];
     }
