@@ -18,4 +18,17 @@
     }
 }
 
+- (NSDictionary *)getDict
+{
+    return @{@"x":[NSNumber numberWithInteger:self.x],@"y":[NSNumber numberWithInteger:self.y],@"score":[NSNumber numberWithInteger:self.score]};
+}
+
+- (void)setBlockWithDict:(NSDictionary *)dict
+{
+    self.x = [dict[@"x"] integerValue];
+    self.y = [dict[@"y"] integerValue];
+    self.score = [dict[@"score"] integerValue];
+
+}
+
 @end

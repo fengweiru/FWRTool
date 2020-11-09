@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol Play2048ManagerDelegate <NSObject>
 
 - (void)addBlockView:(BlockView *)blockView;
+- (void)refreshScore:(NSUInteger)score;
+- (void)refreshHistoryScore:(NSUInteger)historyScore;
 
 @end
 
@@ -24,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray <BlockView *>*)createBaseData;
 
 - (void)swipWithSwipeGestureRecognizer:(UISwipeGestureRecognizer *)swipeG;
+
+- (void)saveCurrentData;
+- (void)clearCurrentData;
 
 @end
 

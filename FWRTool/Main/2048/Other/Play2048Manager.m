@@ -15,6 +15,9 @@
 @property (nonatomic, strong) NSMutableArray *arrayBoard;
 @property (nonatomic, assign) NSInteger num;
 
+@property (nonatomic, assign) NSUInteger score;
+@property (nonatomic, assign) NSUInteger historyScore;
+
 @end
 
 @implementation Play2048Manager
@@ -29,7 +32,20 @@
 
 - (NSArray <BlockView *>*)createBaseData
 {
+    if (self.arrayBoard) {
+        for (NSMutableArray *rawArray in self.arrayBoard) {
+            for (id obj in rawArray) {
+                if ([obj isKindOfClass:[BlockView class]]) {
+                    BlockView *blockView = (BlockView *)obj;
+                    [blockView removeFromSuperview];
+                }
+            }
+        }
+    }
+    
     self.num = 0;
+    self.score = 0;
+    self.historyScore = 0;
     
     self.arrayBoard = [[NSMutableArray alloc] initWithCapacity:4];
     for (NSInteger x = 0; x < 4; x++) {
@@ -38,6 +54,29 @@
             [rawArr addObject:@0];
         }
         [self.arrayBoard addObject:rawArr];
+    }
+    
+    NSString* filePath = [self dataFilePath];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
+        self.historyScore = [dict[@"historyScore"] unsignedIntegerValue];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(refreshHistoryScore:)]) {
+            [self.delegate refreshHistoryScore:self.historyScore];
+        }
+        if (dict[@"score"] && dict[@"array"]) {
+            self.score = [dict[@"score"] unsignedIntegerValue];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(refreshScore:)]) {
+                [self.delegate refreshScore:self.score];
+            }
+            NSArray* arr = dict[@"array"];
+            NSMutableArray <BlockView *>*blockArr = [[NSMutableArray alloc] init];
+            for (NSDictionary *dict in arr) {
+                BlockView *blockView = [self createBlock:dict];
+                [blockArr addObject:blockView];
+            }
+            return blockArr;
+        }
+
     }
     
     BlockView *blockView1 = [self createBlock];
@@ -81,6 +120,50 @@
     
     return blockView;
 }
+- (BlockView *)createBlock:(NSDictionary *)dict
+{
+    BlockView *blockView = [[BlockView alloc] init];
+    [blockView.block setBlockWithDict:dict];
+    
+    self.num++;
+    self.arrayBoard[blockView.block.x][blockView.block.y] = blockView;
+    
+    return blockView;
+}
+
+- (void)saveCurrentData
+{
+    NSMutableArray *dataArr = [[NSMutableArray alloc] init];
+    for (NSInteger x = 0; x < 4; x++) {
+        for (NSInteger y = 0; y < 4; y++) {
+            if ([self.arrayBoard[x][y] isKindOfClass:[BlockView class]]) {
+                BlockView *blockView = (BlockView *)self.arrayBoard[x][y];
+                NSDictionary *data = [blockView.block getDict];
+                [dataArr addObject:data];
+            }
+        }
+    }
+    
+    NSDictionary *dict = @{@"score":[NSNumber numberWithUnsignedInteger:self.score],@"array":dataArr,@"historyScore":[NSNumber numberWithUnsignedInteger:self.historyScore]};
+    BOOL success = [dict writeToFile:[self dataFilePath] atomically:true];
+    NSLog(@"%d",success);
+}
+- (void)clearCurrentData
+{
+    NSFileManager *manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:[self dataFilePath]]) {
+        NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:[self dataFilePath]];
+        NSDictionary *clearDict = @{@"historyScore":dict[@"historyScore"]};
+        [clearDict writeToFile:[self dataFilePath] atomically:true];
+    }
+}
+
+- (NSString *)dataFilePath
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectory = paths[0];
+    return [documentDirectory stringByAppendingPathComponent:@"arrData.plist"];
+}
 
 - (void)swipWithSwipeGestureRecognizer:(UISwipeGestureRecognizer *)swipeG
 {
@@ -99,6 +182,8 @@
                                 if ((blockView.block.score == blockView2.block.score) && !blockView.isMerged) {
                                     [blockView2 moveX:blockView.block.x isMergedTo:blockView];
                                     self.arrayBoard[x][y] = @0;
+                                    self.score += blockView.block.score;
+                                    
                                     blockView2 = nil;
                                     self.num--;
                                     add = true;
@@ -146,6 +231,8 @@
                                 if ((blockView.block.score == blockView2.block.score) && !blockView.isMerged) {
                                     [blockView2 moveX:blockView.block.x isMergedTo:blockView];
                                     self.arrayBoard[x][y] = @0;
+                                    self.score += blockView.block.score;
+                                    
                                     blockView2 = nil;
                                     self.num--;
                                     add = true;
@@ -193,6 +280,8 @@
                                 if ((blockView.block.score == blockView2.block.score) && !blockView.isMerged) {
                                     [blockView2 moveY:blockView.block.y isMergedTo:blockView];
                                     self.arrayBoard[x][y] = @0;
+                                    self.score += blockView.block.score;
+                                    
                                     blockView2 = nil;
                                     self.num--;
                                     add = true;
@@ -240,6 +329,8 @@
                                 if ((blockView.block.score == blockView2.block.score) && !blockView.isMerged) {
                                     [blockView2 moveY:blockView.block.y isMergedTo:blockView];
                                     self.arrayBoard[x][y] = @0;
+                                    self.score += blockView.block.score;
+                                    
                                     blockView2 = nil;
                                     self.num--;
                                     add = true;
@@ -277,12 +368,23 @@
             
         }
         
+        if (self.delegate && [self.delegate respondsToSelector:@selector(refreshScore:)]) {
+            [self.delegate refreshScore:self.score];
+        }
+        if (self.score > self.historyScore) {
+            self.historyScore = self.score;
+        }
+        if (self.delegate && [self.delegate respondsToSelector:@selector(refreshHistoryScore:)]) {
+            [self.delegate refreshHistoryScore:self.historyScore];
+        }
+        
         if (add) {
             [NSTimer scheduledTimerWithTimeInterval:0.2f repeats:false block:^(NSTimer * _Nonnull timer) {
                 BlockView *blockView = [self createBlock];
                 if (self.delegate && [self.delegate respondsToSelector:@selector(addBlockView:)]) {
                     [self.delegate addBlockView:blockView];
                 }
+                [self saveCurrentData];
             }];
         }
         
